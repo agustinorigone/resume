@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Axion</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    
+    <!-- Important Owl stylesheet -->
+    <link rel="stylesheet" href="css/owl.carousel.css">
+     
+    <!-- Default Theme -->
+    <link rel="stylesheet" href="css/owl.theme.css">
+
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style-D1.css" rel="stylesheet" id="sheet-d1">
+      
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Include js plugin -->
+    <script src="js/owl.carousel.js"></script> 
+</head>
+
+<body>
+  <script type="text/javascript">
+  $( document ).ready(function() {
+    $(".qa-img").click(function(){
+      var id = $(this).attr("id");
+      id = id.substr(id.length - 2);
+      id = id.replace("-","");
+      
+      toggle("#qa-content-" + id);
+      toggle("#qa-img-top-" + id);
+      toggle("#qa-img-bottom-" + id);
+
+    });
+  });
+
+  function toggle(element){
+    if($(element).hasClass("hidden")){
+        $(element).removeClass("hidden");
+      }else{
+        $(element).addClass("hidden");
+    }
+  }
+  </script>
+  
+  <header>
+    <div class="container relative full-width-mobile">
+      <div class="header-logo inline hidden-mobile">
+        <img src="./img/header.png">
+      </div><div class="header-search inline hidden-mobile">
+        <form class="navbar-form navbar-left" role="search">
+          <div class="form-group relative">
+            <span class="glyphicon glyphicon-search pointer" aria-hidden="true"></span>
+            <input type="text" class="form-control" placeholder="Buscar...">
+          </div>
+        </form>
+      </div><div class="dropdown header-menu inline pointer">
+        <button class="btn btn-default btn-menu dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+          <span class="glyphicon glyphicon-menu-hamburger inline hidden-desktop" aria-hidden="true"></span>
+          <div class="inline left-mobile">
+            <span class="header-menu-user inline">Bienvenido,</span>
+            <span class="header-menu-user inline bold">Usuario 1</span>
+          </div>
+          <span class="glyphicon glyphicon-menu-hamburger inline hidden-mobile" aria-hidden="true"></span>
+        </button>
+        <div class="triangle-up"></div>
+        <ul class="dropdown-menu center-mobile" aria-labelledby="dropdownMenu1">
+          <li class="hidden-desktop">
+            <form class="navbar-form navbar-left" role="search">
+              <div class="form-group relative">
+                <span class="glyphicon glyphicon-search pointer" aria-hidden="true"></span>
+                <input type="text" class="form-control" placeholder="Buscar...">
+              </div>
+            </form>
+          </li>
+          <li><a href="#" class="bold hidden-mobile">Mi cuenta</a></li>
+          <li role="separator" class="divider hidden-mobile"></li>
+          <li><a href="#" class="bold hidden-mobile">Inversiones</a></li>
+          <li role="separator" class="divider hidden-mobile"></li>
+          <li><a href="#" class="bold">Reglamento y formulario</a></li>
+          <li role="separator" class="divider"></li>
+          <li><a href="#" class="bold">Que es un plan de pension</a></li>
+          <li role="separator" class="divider"></li>
+          <li><a href="#" class="bold hidden-mobile">Libreria de Recursos</a></li>
+          <li role="separator" class="divider hidden-mobile"></li>
+          <li><a href="#" class="bold">Preguntas Frecuentes</a></li>
+          <li role="separator" class="divider"></li>
+          <li><a href="#" class="bold">Cambiar clave</a></li>
+          <li role="separator" class="divider"></li>
+          <li><a href="#" class="bold">Contacto</a></li>
+          <li role="separator" class="divider"></li>
+          <li><a href="#" class="bold">Cerrar Sesion</a></li>
+        </ul>
+      </div>
+      <div class="header-logo inline hidden-desktop">
+        <img src="./img/header.png">
+      </div>
+    </div>
+  </header>
+
+  <section class="container full-width-mobile">
+  <div class="relative">
+    <img class="header-image hidden-mobile" src="./img/header-image.jpg">
+    <img class="header-image hidden-desktop" src="./img/mobile/header-image.jpg">
+    <div class="header-image-text">
+      <div>Preguntas</div>
+      <div>Frecuentes</div>
+    </div>
+  </div>
+  <div class="navigate">
+    <span>Home</span>
+    <span> | </span>
+    <span class="selected">Preguntas Frecuentes</span>
+  </div>
+  <hr>
+  </section>
+
+  <section id="preguntas-frecuentes" class="container">
+    <div class="title bold qa-sep">Preguntas Frecuentes</div>
+    <div class="qa-banner blue"><span class="bold">IMPORTANTE: </span><span>este documento no debe considerarse como asesoramiento impositivo. Se recomienda que te asesores adecuadamente recurriendo a tu consultor impositivo individual. Regímenes de Información de operaciones con Fideicomisos (RG 3312/12 AFIP) y su tratamiento impositivo.</span></div>
+    
+    <div class="qa-container">
+      <div class="qa-text qa-sep red">1. Cuáles son las DDJJ informativas previstas en la RG 3312/12 AFIP?</div>
+      <hr>
+      <ul id="qa-content-1" class="qa-content hidden">
+        <li>Una de carácter anual que se confecciona a través del aplicativo de AFIP</li>
+        <li>Otra de caracter periódico por cada transacción que se efectúa a trvés de la página de AFIP</li>
+      </ul>
+      <img id="qa-img-top-1" class="qa-img hidden" src="./img/arrow-top-red.png">
+      <img id="qa-img-bottom-1" class="qa-img" src="./img/arrow-bottom-red.png">
+    </div>
+
+    <div class="qa-container">
+      <div class="qa-text qa-sep blue">2. Cuáles son las DDJJ informativas previstas en la RG 3312/12 AFIP?</div>
+      <hr>
+      <ul id="qa-content-2" class="qa-content hidden">
+        <li>Una de carácter anual que se confecciona a través del aplicativo de AFIP</li>
+        <li>Otra de caracter periódico por cada transacción que se efectúa a trvés de la página de AFIP</li>
+      </ul>
+      <img id="qa-img-top-2" class="qa-img hidden" src="./img/arrow-top-blue.png">
+      <img id="qa-img-bottom-2" class="qa-img" src="./img/arrow-bottom-blue.png">
+    </div>
+    
+    <div class="qa-container">
+      <div class="qa-text qa-sep red">3. Cuáles son las DDJJ informativas previstas en la RG 3312/12 AFIP?</div>
+      <hr>
+      <ul id="qa-content-3" class="qa-content hidden">
+        <li>Una de carácter anual que se confecciona a través del aplicativo de AFIP</li>
+        <li>Otra de caracter periódico por cada transacción que se efectúa a trvés de la página de AFIP</li>
+      </ul>
+      <img id="qa-img-top-3" class="qa-img hidden" src="./img/arrow-top-red.png">
+      <img id="qa-img-bottom-3" class="qa-img" src="./img/arrow-bottom-red.png">
+    </div>
+
+    <div class="qa-container">
+      <div class="qa-text qa-sep blue">4. Cuáles son las DDJJ informativas previstas en la RG 3312/12 AFIP?</div>
+      <hr>
+      <ul id="qa-content-4" class="qa-content hidden">
+        <li>Una de carácter anual que se confecciona a través del aplicativo de AFIP</li>
+        <li>Otra de caracter periódico por cada transacción que se efectúa a trvés de la página de AFIP</li>
+      </ul>
+      <img id="qa-img-top-4" class="qa-img hidden" src="./img/arrow-top-blue.png">
+      <img id="qa-img-bottom-4" class="qa-img" src="./img/arrow-bottom-blue.png">
+    </div>
+
+    <div class="qa-container">
+      <div class="qa-text qa-sep red">5. Cuáles son las DDJJ informativas previstas en la RG 3312/12 AFIP?</div>
+      <hr>
+      <ul id="qa-content-5" class="qa-content hidden">
+        <li>Una de carácter anual que se confecciona a través del aplicativo de AFIP</li>
+        <li>Otra de caracter periódico por cada transacción que se efectúa a trvés de la página de AFIP</li>
+      </ul>
+      <img id="qa-img-top-5" class="qa-img hidden" src="./img/arrow-top-red.png">
+      <img id="qa-img-bottom-5" class="qa-img" src="./img/arrow-bottom-red.png">
+    </div>
+
+    <div class="qa-container">
+      <div class="qa-text qa-sep blue">6. Cuáles son las DDJJ informativas previstas en la RG 3312/12 AFIP?</div>
+      <hr>
+      <ul id="qa-content-6" class="qa-content hidden">
+        <li>Una de carácter anual que se confecciona a través del aplicativo de AFIP</li>
+        <li>Otra de caracter periódico por cada transacción que se efectúa a trvés de la página de AFIP</li>
+      </ul>
+      <img id="qa-img-top-6" class="qa-img hidden" src="./img/arrow-top-blue.png">
+      <img id="qa-img-bottom-6" class="qa-img" src="./img/arrow-bottom-blue.png">
+    </div>
+
+    <div class="qa-container">
+      <div class="qa-text qa-sep red">7. Cuáles son las DDJJ informativas previstas en la RG 3312/12 AFIP?</div>
+      <hr>
+      <ul id="qa-content-7" class="qa-content hidden">
+        <li>Una de carácter anual que se confecciona a través del aplicativo de AFIP</li>
+        <li>Otra de caracter periódico por cada transacción que se efectúa a trvés de la página de AFIP</li>
+      </ul>
+      <img id="qa-img-top-7" class="qa-img hidden" src="./img/arrow-top-red.png">
+      <img id="qa-img-bottom-7" class="qa-img" src="./img/arrow-bottom-red.png">
+    </div>
+
+    <div class="qa-container">
+      <div class="qa-text qa-sep blue">8. Cuáles son las DDJJ informativas previstas en la RG 3312/12 AFIP?</div>
+      <hr>
+      <ul id="qa-content-8" class="qa-content hidden">
+        <li>Una de carácter anual que se confecciona a través del aplicativo de AFIP</li>
+        <li>Otra de caracter periódico por cada transacción que se efectúa a trvés de la página de AFIP</li>
+      </ul>
+      <img id="qa-img-top-8" class="qa-img hidden" src="./img/arrow-top-blue.png">
+      <img id="qa-img-bottom-8" class="qa-img" src="./img/arrow-bottom-blue.png">
+    </div>
+
+    <div class="qa-container">
+      <div class="qa-text qa-sep red">9. Cuáles son las DDJJ informativas previstas en la RG 3312/12 AFIP?</div>
+      <hr>
+      <ul id="qa-content-9" class="qa-content hidden">
+        <li>Una de carácter anual que se confecciona a través del aplicativo de AFIP</li>
+        <li>Otra de caracter periódico por cada transacción que se efectúa a trvés de la página de AFIP</li>
+      </ul>
+      <img id="qa-img-top-9" class="qa-img hidden" src="./img/arrow-top-red.png">
+      <img id="qa-img-bottom-9" class="qa-img" src="./img/arrow-bottom-red.png">
+    </div>
+
+    <div class="qa-container">
+      <div class="qa-text qa-sep blue">10. Cuáles son las DDJJ informativas previstas en la RG 3312/12 AFIP?</div>
+      <hr>
+      <ul id="qa-content-10" class="qa-content hidden">
+        <li>Una de carácter anual que se confecciona a través del aplicativo de AFIP</li>
+        <li>Otra de caracter periódico por cada transacción que se efectúa a trvés de la página de AFIP</li>
+      </ul>
+      <img id="qa-img-top-10" class="qa-img hidden" src="./img/arrow-top-blue.png">
+      <img id="qa-img-bottom-10" class="qa-img" src="./img/arrow-bottom-blue.png">
+    </div>
+
+    <div class="qa-container">
+      <div class="qa-text qa-sep red">11. Cuáles son las DDJJ informativas previstas en la RG 3312/12 AFIP?</div>
+      <hr>
+      <ul id="qa-content-11" class="qa-content hidden">
+        <li>Una de carácter anual que se confecciona a través del aplicativo de AFIP</li>
+        <li>Otra de caracter periódico por cada transacción que se efectúa a trvés de la página de AFIP</li>
+      </ul>
+      <img id="qa-img-top-11" class="qa-img hidden" src="./img/arrow-top-red.png">
+      <img id="qa-img-bottom-11" class="qa-img" src="./img/arrow-bottom-red.png">
+    </div>
+
+    <div class="qa-container">
+      <div class="qa-text qa-sep blue">12. Cuáles son las DDJJ informativas previstas en la RG 3312/12 AFIP?</div>
+      <hr>
+      <ul id="qa-content-12" class="qa-content hidden">
+        <li>Una de carácter anual que se confecciona a través del aplicativo de AFIP</li>
+        <li>Otra de caracter periódico por cada transacción que se efectúa a trvés de la página de AFIP</li>
+      </ul>
+      <img id="qa-img-top-12" class="qa-img hidden" src="./img/arrow-top-blue.png">
+      <img id="qa-img-bottom-12" class="qa-img" src="./img/arrow-bottom-blue.png">
+    </div>
+
+    <div class="qa-container">
+      <div class="qa-text qa-sep red">13. Cuáles son las DDJJ informativas previstas en la RG 3312/12 AFIP?</div>
+      <hr>
+      <ul id="qa-content-13" class="qa-content hidden">
+        <li>Una de carácter anual que se confecciona a través del aplicativo de AFIP</li>
+        <li>Otra de caracter periódico por cada transacción que se efectúa a trvés de la página de AFIP</li>
+      </ul>
+      <img id="qa-img-top-13" class="qa-img hidden" src="./img/arrow-top-red.png">
+      <img id="qa-img-bottom-13" class="qa-img" src="./img/arrow-bottom-red.png">
+    </div>
+
+    <div class="qa-container">
+      <div class="qa-text qa-sep blue">14. Cuáles son las DDJJ informativas previstas en la RG 3312/12 AFIP?</div>
+      <hr>
+      <ul id="qa-content-14" class="qa-content hidden">
+        <li>Una de carácter anual que se confecciona a través del aplicativo de AFIP</li>
+        <li>Otra de caracter periódico por cada transacción que se efectúa a trvés de la página de AFIP</li>
+      </ul>
+      <img id="qa-img-top-14" class="qa-img hidden" src="./img/arrow-top-blue.png">
+      <img id="qa-img-bottom-14" class="qa-img" src="./img/arrow-bottom-blue.png">
+    </div>
+
+    <div class="qa-container">
+      <div class="qa-text qa-sep red">15. Cuáles son las DDJJ informativas previstas en la RG 3312/12 AFIP?</div>
+      <hr>
+      <ul id="qa-content-15" class="qa-content hidden">
+        <li>Una de carácter anual que se confecciona a través del aplicativo de AFIP</li>
+        <li>Otra de caracter periódico por cada transacción que se efectúa a trvés de la página de AFIP</li>
+      </ul>
+      <img id="qa-img-top-15" class="qa-img hidden" src="./img/arrow-top-red.png">
+      <img id="qa-img-bottom-15" class="qa-img" src="./img/arrow-bottom-red.png">
+    </div>
+
+    <div class="qa-container">
+      <div class="qa-text qa-sep blue">16. Cuáles son las DDJJ informativas previstas en la RG 3312/12 AFIP?</div>
+      <hr>
+      <ul id="qa-content-16" class="qa-content hidden">
+        <li>Una de carácter anual que se confecciona a través del aplicativo de AFIP</li>
+        <li>Otra de caracter periódico por cada transacción que se efectúa a trvés de la página de AFIP</li>
+      </ul>
+      <img id="qa-img-top-16" class="qa-img hidden" src="./img/arrow-top-blue.png">
+      <img id="qa-img-bottom-16" class="qa-img" src="./img/arrow-bottom-blue.png">
+    </div>
+
+    <div class="qa-container">
+      <div class="qa-text qa-sep red">17. Cuáles son las DDJJ informativas previstas en la RG 3312/12 AFIP?</div>
+      <hr>
+      <ul id="qa-content-17" class="qa-content hidden">
+        <li>Una de carácter anual que se confecciona a través del aplicativo de AFIP</li>
+        <li>Otra de caracter periódico por cada transacción que se efectúa a trvés de la página de AFIP</li>
+      </ul>
+      <img id="qa-img-top-17" class="qa-img hidden" src="./img/arrow-top-red.png">
+      <img id="qa-img-bottom-17" class="qa-img" src="./img/arrow-bottom-red.png">
+    </div>
+    <div class="qa-back"><a class="red" href="libreria-noticias.html">&#60;&#60; Volver</a></div>
+  </section>
+
+  <footer>
+    <div class="container full-width-mobile">
+      <div class="footer-container">
+        <div class="footer-left">
+          <div class="hidden-mobile">Copyright ©2016 Towers Watson. All Rights Reserved.</div>
+          <div class="center-mobile">
+            <span class="footer-item"><a href="">Mapa del Sitio</a></span>
+            <span class="hidden-mobile"> | </span>
+            <hr class="hidden-desktop">
+            <span class="footer-item"><a href="">Terminos de Uso</a></span>
+            <span class="hidden-mobile"> | </span>
+            <hr class="hidden-desktop">
+            <span class="footer-item"><a href="">Políticas de Privacidad & Cookies</a></span>
+            <hr class="hidden-desktop">
+          </div>
+          <div class="hidden-desktop center-mobile">Copyright ©2016 Towers Watson. All Rights Reserved.</div>
+        </div>
+        <div class="footer-right center-mobile">
+          <img src="./img/footer-logo.png">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

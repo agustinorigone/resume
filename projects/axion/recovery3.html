@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Axion</title>
+
+  <!-- Bootstrap Core CSS -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+  
+  <!-- Important Owl stylesheet -->
+  <link rel="stylesheet" href="css/owl.carousel.css">
+   
+  <!-- Default Theme -->
+  <link rel="stylesheet" href="css/owl.theme.css">
+
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style-D1.css" rel="stylesheet">
+    
+  <!-- jQuery -->
+  <script src="js/jquery.js"></script>
+
+  <!-- Bootstrap Core JavaScript -->
+  <script src="js/bootstrap.min.js"></script>
+
+  <!-- Include js plugin -->
+  <script src="js/owl.carousel.js"></script> 
+</head>
+
+<body>
+  <script type="text/javascript">
+    $( document ).ready(function() {
+      $("#login-slider").owlCarousel({
+
+          autoPlay: true,
+          navigation : true, // Show next and prev buttons
+          slideSpeed : 300,
+          paginationSpeed : 400,
+          singleItem:true,
+          pagination:false
+
+      });
+
+      $("#login-slider .owl-prev").html("<img src='img/arrow-left.png'>");
+      $("#login-slider .owl-next").html("<img src='img/arrow-right.png'>");
+
+    });
+  </script>
+
+  <section class="login-background hidden-d3 relative">
+    <div class="container">
+      <div class="login-header">
+        <img src="./img/header.png">
+      </div>
+      <div class="login-form-container">
+        <div class="login-title bold">Recuperar Contraseña</div>
+        <div class="login-desc medium interline hidden-mobile">
+          <span>El usuario y/o el e-mail ingresado son incorrectos.</br></span>
+          <span>Si necesitas asistencia, escribí un correo electrónico a </span>
+          <span><a class="mail" href="">axionplandepension@towerswatson.com </br></a></span>
+          <span>y/o a </span>
+          <span><a class="mail" href="">RRHH.PlandePension@axionenergy.com </a></span>
+        </div>
+        <div class="login-desc medium hidden-desktop">
+          <span>El usuario y/o el e-mail ingresado son incorrectos.</span>
+          <span>Si necesitas asistencia, escribí un correo electrónico a </span>
+          <span><a class="mail" href="">axionplandepension@towerswatson.com </a></span>
+          <span>y/o a </span>
+          <span><a class="mail" href="">RRHH.PlandePension@axionenergy.com </a></span>
+        </div>
+      <div class="login-back-container full-width pointer"><a href="login.html">&#60;&#60; Volver al login</a></div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container full-width-mobile">
+      <div class="footer-container login">
+        <div class="footer-left">
+          <div class="center-mobile">Copyright ©2016 Towers Watson.<br>All Rights Reserved.</div>
+          <hr class="hidden-desktop">
+        </div>
+        <div class="footer-right center-mobile">
+          <img src="./img/footer-logo.png">
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+</body>
+
+</html>

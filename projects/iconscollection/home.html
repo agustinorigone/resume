@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="img/desktop/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/desktop/favicon.ico" type="image/x-icon">
+
+    <title>Icons Collection</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    
+    <!-- Important Owl stylesheet -->
+    <link rel="stylesheet" href="css/owl.carousel.css">
+     
+    <!-- Default Theme -->
+    <link rel="stylesheet" href="css/owl.theme.css">
+
+    <link href="css/style.css" rel="stylesheet">
+      
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+     
+    <!-- Include js plugin -->
+    <script src="js/owl.carousel.js"></script> 
+</head>
+
+<body id="page-top" class="index">
+    <script type="text/javascript">
+      $(document).ready(function() {
+
+        $("#info-carousel-desktop").owlCarousel({
+
+            navigation : true, // Show next and prev buttons
+            slideSpeed : 300,
+            paginationSpeed : 400,
+            singleItem:true,
+            pagination:false
+
+        });
+
+        $("#info-carousel-mobile").owlCarousel({
+
+            navigation : true, // Show next and prev buttons
+            slideSpeed : 300,
+            paginationSpeed : 400,
+            singleItem:true,
+            pagination:false
+
+        });
+
+        $("#info-carousel-desktop .owl-prev").html("<img src='img/desktop/info/arrow-left.png'>");
+        $("#info-carousel-desktop .owl-next").html("<img src='img/desktop/info/arrow-right.png'>");
+
+        $("#info-carousel-mobile .owl-prev").html("<img src='img/mobile/info/arrow-left.png' class='hiddenDesktop hiddenTablet'><img src='img/desktop/info/arrow-left.png' class='hiddenMobile showTablet'>");
+        $("#info-carousel-mobile .owl-next").html("<img src='img/mobile/info/arrow-right.png' class='hiddenDesktop hiddenTablet'><img src='img/desktop/info/arrow-right.png' class='hiddenMobile showTablet'>");
+
+        $("#info-btn").click(function(){
+          var caret = $("#info-btn .menu-mobile-caret");
+          if(caret.hasClass("arrow-up")){
+            caret.removeClass("arrow-up");
+            caret.addClass("arrow-down");
+          }else if(caret.hasClass("arrow-down")){
+            caret.removeClass("arrow-down");
+            caret.addClass("arrow-up");
+          }
+        });
+
+        $("#cuenta-btn").click(function(){
+          var caret = $("#cuenta-btn .menu-mobile-caret");
+          if(caret.hasClass("arrow-up")){
+            caret.removeClass("arrow-up");
+            caret.addClass("arrow-down");
+          }else if(caret.hasClass("arrow-down")){
+            caret.removeClass("arrow-down");
+            caret.addClass("arrow-up");
+          }
+        });
+
+      });
+    </script>
+    
+    <!-- BEGIN MENU SECTION -->
+    <nav id="menu" class="navbar navbar-default navbar-fixed-top">
+      <div class="container full-width-mobile">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll container-mobile-fix">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+          </button>
+          <!--<img src="./img/desktop/menu-icon.png" class="menu-icon hiddenMobile">-->
+          <img src="./img/mobile/menu-icon.png" class="menu-icon hiddenDesktop">
+        </div>
+
+        <div class="collapse navbar-collapse menu-navbar" id="bs-example-navbar-collapse-1">
+          <!-- DESKTOP MENU -->
+          <div class="menu-separation hiddenMobile">  
+            <div class="btn-group">
+              <img src="./img/desktop/menu-icon.png" class="menu-icon hiddenMobile">
+              <button type="button" class="btn btn-default dropdown-toggle menu-btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Mi Cuenta
+              </button>
+              <ul class="dropdown-menu">
+                <li><a href="#">Mi perfil</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Mis subastas</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Mis regalos</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Mis subastas grupales</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Cargar Icons</a></li>
+              </ul>
+            </div>
+            <div class="btn-group">
+              <button type="button" class="btn btn-default menu-btn">Subastas Activas</button>
+            </div>
+            <div class="btn-group relative">
+              <button type="button" class="btn btn-default menu-btn">Canjes Directos</button>
+              <div class="menu-box-green" style="display:block"> ¡Date prisa y llévate tu premio! </div>
+            </div>
+            <div class="btn-group">
+              <button type="button" class="btn btn-default dropdown-toggle menu-btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Información
+              </button>
+              <ul class="dropdown-menu">
+                <li><a href="#">Como Jugar</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Historia de Campaña</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Premios</a></li>    
+              </ul>
+            </div>
+            <div class="btn-group">
+              <button type="button" class="btn btn-default menu-btn">Ganadores</button>
+            </div>
+            <div class="btn-group">
+              <button type="button" class="btn btn-default menu-btn">Sorteo Final</button>
+            </div>
+            <div class="menu-item menu-item-name margin-left-40">
+              <div>
+                <div class="menu-item text-white">Bienvenido</div>
+                <div class="menu-item">Federico</div>
+              </div>
+              <div>
+                <div class="menu-item text-white">Tienes</div>
+                <div class="menu-item">14000</div>
+                <div class="menu-item">Icons</div>
+              </div>
+            </div>
+            <div class="menu-item menu-item-name">
+              <img src="img/desktop/menu-arrow.png">
+            </div>
+            <div class="menu-item relative margin-left-40-bis">
+              <img src="img/desktop/menu-new.png">
+              <div class="menu-box" style="display:block; z-index:1000000"> ¡Carga tus icons! </div>
+              <div class="menu-box" style="display:block"> 
+                <div class="text-small">Tus icons</div>
+                <div class="text-big">17000</div>
+              </div>
+            </div>
+            <div class="menu-item" style="display:none">
+              <img src="img/desktop/menu-logo.png">
+            </div>
+            <div class="menu-item">
+              <img src="img/desktop/menu-avatar.png">
+            </div>
+            <div class="menu-item relative">
+              <img src="img/desktop/menu-power.png">
+            </div>
+          </div>
+          <!-- END DESKTOP MENU -->
+
+          <!-- MOBILE MENU  -->
+          <div class="hiddenDesktop">
+            <div class="menu-mobile">
+              <div class="btn-group full-width-mobile" role="group">
+                <button id="cuenta-btn" type="button" class="btn btn-menu-mobile dropdown-toggle menu-text" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Mi Cuenta
+                  <span class="caret menu-mobile-caret arrow-down"></span>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-mobile">
+                  <li class="divider"></li>
+                  <li><a href="#">Mi Perfil</a></li>
+                  <li><a href="#">Mis Subastas</a></li>
+                  <li><a href="#">Mis Regalos</a></li>
+                  <li><a href="#">Mis Subastas Grupales</a></li>
+                  <li><a href="#">Cargar Icons</a></li>
+                </ul>
+              </div>
+              <div class="divider"></div>
+              <div class="menu-text"><a href="#">Subastas Activas</a></div>
+              <div class="divider"></div>
+              <div class="menu-text"><a href="#">Canjes Directos</a></div>
+              <div class="divider"></div>
+              <div class="btn-group full-width-mobile" role="group">
+                <button id="info-btn" type="button" class="btn btn-menu-mobile dropdown-toggle menu-text" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Información
+                  <span class="caret menu-mobile-caret arrow-down"></span>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-mobile">
+                  <li class="divider"></li>
+                  <li><a href="#">Como Jugar</a></li>
+                  <li><a href="#">Historia de Campaña</a></li>
+                  <li><a href="#">Premios</a></li>
+                </ul>
+              </div>
+              <div class="divider"></div>
+              <div class="menu-text"><a href="#">Ganadores</a></div>
+              <div class="divider"></div>
+              <div class="menu-text"><a href="#">Sorteo Final</a></div>
+              <div class="divider"></div>
+              <div class="menu-text"><a href="#">Salir</a></div>
+              <div class="divider"></div>
+            </div>
+          </div>
+          <!-- END MOBILE MENU  -->
+        </div>
+      </div>
+    </nav>
+    <!-- END MENU SECTION -->
+
+    <!-- Home -->
+    <header id="home" class="home-background background-image">
+        <div class="container hiddenMobile">
+          <!-- SOFA DOT -->
+          <div id="circle-sofa" class="yellow-circle">
+            <div class="gift-description" style="display:block">
+              <div class="gift-description-top">
+                <div>Sofa de Diseño</div>
+                <div>Sillom le carbouser</div>
+              </div>
+              <div class="gift-description-bottom">
+                <div class="gift-description-bottom-left">¡Animate a pujar!</div><div class="gift-description-bottom-right">
+                  <img src="img/desktop/pujar.png">
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- END SOFA DOT -->
+
+          <!-- MAP DOT -->
+          <div id="circle-map" class="yellow-circle">
+            <div class="gift-description" style="display:none">
+              <div class="gift-description-top">
+                <div>Sofa de Diseño</div>
+                <div>Sillom le carbouser</div>
+              </div>
+              <div class="gift-description-bottom">
+                <div class="gift-description-bottom-left">¡Animate a pujar!</div><div class="gift-description-bottom-right">
+                  <img src="img/desktop/pujar.png">
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- END MAP DOT -->
+          
+          <!-- SURFBOARD DOT -->
+          <div id="circle-surf" class="yellow-circle">
+            <div class="gift-description" style="display:none">
+              <div class="gift-description-top">
+                <div>Sofa de Diseño</div>
+                <div>Sillom le carbouser</div>
+              </div>
+              <div class="gift-description-bottom">
+                <div class="gift-description-bottom-left">¡Animate a pujar!</div><div class="gift-description-bottom-right">
+                  <img src="img/desktop/pujar.png">
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- END SURFBOARD DOT -->
+
+          <!-- MUSIC DOT -->
+          <div id="circle-music" class="yellow-circle">
+            <div class="gift-description" style="display:none">
+              <div class="gift-description-top">
+                <div>Sofa de Diseño</div>
+                <div>Sillom le carbouser</div>
+              </div>
+              <div class="gift-description-bottom">
+                <div class="gift-description-bottom-left">¡Animate a pujar!</div><div class="gift-description-bottom-right">
+                  <img src="img/desktop/pujar.png">
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- END MUSIC DOT -->
+
+          <!-- TELESCOPE DOT -->
+          <div id="circle-telescope" class="yellow-circle">
+            <div class="gift-description" style="display:none">
+              <div class="gift-description-top">
+                <div>Sofa de Diseño</div>
+                <div>Sillom le carbouser</div>
+              </div>
+              <div class="gift-description-bottom">
+                <div class="gift-description-bottom-left">¡Animate a pujar!</div><div class="gift-description-bottom-right">
+                  <img src="img/desktop/pujar.png">
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- END TELESCOPE DOT -->
+
+          <!-- AUDIO DOT -->
+          <div id="circle-audio" class="yellow-circle">
+            <div class="gift-description" style="display:none">
+              <div class="gift-description-top">
+                <div>Sofa de Diseño</div>
+                <div>Sillom le carbouser</div>
+              </div>
+              <div class="gift-description-bottom">
+                <div class="gift-description-bottom-left">¡Animate a pujar!</div><div class="gift-description-bottom-right">
+                  <img src="img/desktop/pujar.png">
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- END AUDIO DOT -->
+
+          <!-- PHOTO DOT -->
+          <div id="circle-photo" class="yellow-circle">
+            <div class="gift-description" style="display:none">
+              <div class="gift-description-top">
+                <div>Sofa de Diseño</div>
+                <div>Sillom le carbouser</div>
+              </div>
+              <div class="gift-description-bottom">
+                <div class="gift-description-bottom-left">¡Animate a pujar!</div><div class="gift-description-bottom-right">
+                  <img src="img/desktop/pujar.png">
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- END PHOTO DOT -->
+
+          <!-- METEGOL DOT -->
+          <div id="circle-metegol" class="yellow-circle">
+            <div class="gift-description" style="display:none">
+              <div class="gift-description-top">
+                <div>Sofa de Diseño</div>
+                <div>Sillom le carbouser</div>
+              </div>
+              <div class="gift-description-bottom">
+                <div class="gift-description-bottom-left">¡Animate a pujar!</div><div class="gift-description-bottom-right">
+                  <img src="img/desktop/pujar.png">
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- END METEGOL DOT -->
+
+          <!-- SKATE DOT -->
+          <div id="circle-skate" class="yellow-circle">
+            <div class="gift-description" style="display:none">
+              <div class="gift-description-top">
+                <div>Sofa de Diseño</div>
+                <div>Sillom le carbouser</div>
+              </div>
+              <div class="gift-description-bottom">
+                <div class="gift-description-bottom-left">¡Animate a pujar!</div><div class="gift-description-bottom-right">
+                  <img src="img/desktop/pujar.png">
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- END SKATE DOT -->
+
+          <!-- LUGGAGE DOT -->
+          <div id="circle-luggage" class="yellow-circle">
+            <div class="gift-description" style="display:none">
+              <div class="gift-description-top">
+                <div>Sofa de Diseño</div>
+                <div>Sillom le carbouser</div>
+              </div>
+              <div class="gift-description-bottom">
+                <div class="gift-description-bottom-left">¡Animate a pujar!</div><div class="gift-description-bottom-right">
+                  <img src="img/desktop/pujar.png">
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- END LUGGAGE DOT -->
+
+          <!-- CAR DOT -->
+          <div id="circle-car" class="yellow-circle">
+            <div class="gift-description right" style="display:none">
+              <div class="gift-description-top">
+                <div>Sofa de Diseño</div>
+                <div>Sillom le carbouser</div>
+              </div>
+              <div class="gift-description-bottom">
+                <div class="gift-description-bottom-left">¡Animate a pujar!</div><div class="gift-description-bottom-right">
+                  <img src="img/desktop/pujar.png">
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- END CAR DOT -->
+
+          <!-- WALL DOT -->
+          <div id="circle-wall" class="yellow-circle">
+            <div class="gift-description right" style="display:none">
+              <div class="gift-description-top">
+                <div>Sofa de Diseño</div>
+                <div>Sillom le carbouser</div>
+              </div>
+              <div class="gift-description-bottom">
+                <div class="gift-description-bottom-left">¡Animate a pujar!</div><div class="gift-description-bottom-right">
+                  <img src="img/desktop/pujar.png">
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- END WALL DOT -->
+
+          <!-- WALL 1 DOT -->
+          <div id="circle-wall-1" class="yellow-circle">
+            <div class="gift-description right" style="display:none">
+              <div class="gift-description-top">
+                <div>Sofa de Diseño</div>
+                <div>Sillom le carbouser</div>
+              </div>
+              <div class="gift-description-bottom">
+                <div class="gift-description-bottom-left">¡Animate a pujar!</div><div class="gift-description-bottom-right">
+                  <img src="img/desktop/pujar.png">
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- END WALL 1 DOT -->
+
+          <!-- WALL 2 DOT -->
+          <div id="circle-wall-2" class="yellow-circle">
+            <div class="gift-description right" style="display:none">
+              <div class="gift-description-top">
+                <div>Sofa de Diseño</div>
+                <div>Sillom le carbouser</div>
+              </div>
+              <div class="gift-description-bottom">
+                <div class="gift-description-bottom-left">¡Animate a pujar!</div><div class="gift-description-bottom-right">
+                  <img src="img/desktop/pujar.png">
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- END WALL 2 DOT -->
+
+          <!-- WALL 3 DOT -->
+          <div id="circle-wall-3" class="yellow-circle">
+            <div class="gift-description right" style="display:none">
+              <div class="gift-description-top">
+                <div>Sofa de Diseño</div>
+                <div>Sillom le carbouser</div>
+              </div>
+              <div class="gift-description-bottom">
+                <div class="gift-description-bottom-left">¡Animate a pujar!</div><div class="gift-description-bottom-right">
+                  <img src="img/desktop/pujar.png">
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- END WALL3 DOT -->
+
+          <!-- WALL4 DOT -->
+          <div id="circle-wall-4" class="yellow-circle">
+            <div class="gift-description right" style="display:none">
+              <div class="gift-description-top">
+                <div>Sofa de Diseño</div>
+                <div>Sillom le carbouser</div>
+              </div>
+              <div class="gift-description-bottom">
+                <div class="gift-description-bottom-left">¡Animate a pujar!</div><div class="gift-description-bottom-right">
+                  <img src="img/desktop/pujar.png">
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- END WALL4 DOT -->
+        </div>
+    </header>
+
+    <!-- Info Desktop-->
+    <section id="info" class="hiddenMobile">
+      <img src="img/desktop/info/info-title.png" class="info-title">
+      <div id="info-carousel-desktop" class="owl-carousel owl-theme">
+        <div class="item"><img src="img/desktop/info/info-background-1.jpg"></div>
+        <div class="item"><img src="img/desktop/info/info-background-2.jpg"></div>
+        <div class="item"><img src="img/desktop/info/info-background-3.jpg"></div>
+        <div class="item"><img src="img/desktop/info/info-background-4.jpg"></div>
+        <div class="item"><img src="img/desktop/info/info-background-5.jpg"></div>
+        <div class="item"><img src="img/desktop/info/info-background-6.jpg"></div>
+        <div class="item"><img src="img/desktop/info/info-background-7.jpg"></div>
+        <div class="item"><img src="img/desktop/info/info-background-8.jpg"></div>
+        <div class="item"><img src="img/desktop/info/info-background-9.jpg"></div>
+        <div class="item"><img src="img/desktop/info/info-background-10.jpg"></div>
+        <div class="item"><img src="img/desktop/info/info-background-11.jpg"></div>
+      </div>
+    </section>
+
+    <!-- Info Mobile-->
+    <section id="info" class="hiddenDesktop">
+      <div id="info-carousel-mobile" class="owl-carousel owl-theme">
+        <div class="item"><img src="img/mobile/info/info-background-1.jpg"></div>
+        <div class="item"><img src="img/mobile/info/info-background-1.jpg"></div>
+        <div class="item"><img src="img/mobile/info/info-background-1.jpg"></div>
+        <div class="item"><img src="img/mobile/info/info-background-1.jpg"></div>
+        <div class="item"><img src="img/mobile/info/info-background-1.jpg"></div>
+        <div class="item"><img src="img/mobile/info/info-background-1.jpg"></div>
+        <div class="item"><img src="img/mobile/info/info-background-1.jpg"></div>
+        <div class="item"><img src="img/mobile/info/info-background-1.jpg"></div>
+        <div class="item"><img src="img/mobile/info/info-background-1.jpg"></div>
+        <div class="item"><img src="img/mobile/info/info-background-1.jpg"></div>
+        <div class="item"><img src="img/mobile/info/info-background-1.jpg"></div>
+      </div>
+    </section>
+
+    <!-- Algunos Ganadores -->
+    <section id="algunos-ganadores" class="algunos-ganadores-background">
+      <div class="container">
+        <div class="row">
+          <h1>Algunos Ganadores</h1>
+        </div>
+        <div class="row">
+          <h4>Ellos ya ganaron. ¿Qué estas esperando para participar?</h4>
+        </div>
+        <div class="row separation-30">
+          <div class="col-md-3">
+            <img src="./img/desktop/premio-1.png">
+            <div class="premio-description">Fiat Cinquecento</div>
+            <img src="./img/desktop/ganador-1.png">
+            <div class="ganador-description">Federico C</div>
+            <div class="ganador-subasto">
+              <div>Subasto el </div>
+              <div>24/04/2016</div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <img src="./img/desktop/premio-1.png">
+            <div class="premio-description">Fiat Cinquecento</div>
+            <img src="./img/desktop/ganador-1.png">
+            <div class="ganador-description">Federico C</div>
+            <div class="ganador-subasto">
+              <div>Subasto el </div>
+              <div>24/04/2016</div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <img src="./img/desktop/premio-1.png">
+            <div class="premio-description">Fiat Cinquecento</div>
+            <img src="./img/desktop/ganador-1.png">
+            <div class="ganador-description">Federico C</div>
+            <div class="ganador-subasto">
+              <div>Subasto el </div>
+              <div>24/04/2016</div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <img src="./img/desktop/premio-1.png">
+            <div class="premio-description">Fiat Cinquecento</div>
+            <img src="./img/desktop/ganador-1.png">
+            <div class="ganador-description">Federico C</div>
+            <div class="ganador-subasto">
+              <div>Subasto el </div>
+              <div>24/04/2016</div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sorteo Loft -->
+    <section id="sorteo-loft" class="sorteo-loft-background background-image">
+      <div class="container">
+        <div class="row container-mobile-fix">
+          <h1>Sorteo de un Loft</h1>
+        </div>
+        <div class="row container-mobile-fix">
+          <div class="sorteo-loft-subtitle">
+            <span>CANJEA</span>
+            <span class="bold">2500</span>
+            <span>ICONS POR UNA OPORTUNIDAD PARA PARTICIPAR EN EL SORTEO DE UN</span>
+            <span class="bold">LOFT</span>
+          </div>
+        </div>
+        <div class="row">
+          <button type="button" class="btn btn-default login-btn input-separator2 btn-canjear"  data-toggle="modal" data-target="#sorteo-modal">¡Canjear Ahora!</button>
+        </div>
+      
+        <!-- MODAL -->
+        <div class="modal fade" id="sorteo-modal" tabindex="-1" role="dialog" aria-labelledby="sorteo-modal">
+          <div class="modal-dialog modal-sorteo" role="document">
+            <div class="modal-content modal-sorteo">
+              <div id="modal-sorteo" class="modal-body modal-sorteo">
+                <img src="img/desktop/sorteo-modal-title.png">
+                <div class="sorteo-loft-modal-container light">
+                  <span>CANJEA</span>
+                  <span class="bold">2500</span>
+                  <span>ICONS POR UNA OPORTUNIDAD PARA PARTICIPAR EN EL SORTEO DE UN</span>
+                  <span class="bold">LOFT</span>
+                </div>
+                <button id="sorteo-canjear" type="button" class="btn btn-default perfil-btn btn-subasta btn-sorteo" data-toggle="modal" data-target="#sorteo-modal-2" data-dismiss="modal">
+                  <span>¡Canjear</span>
+                  <span>2.500</span>
+                  <span>icons ahora!</span>
+                </button>
+                <div class="error-box"> Aun no tienes los icons suficientes. ¡Animo hay miles de premios esperandote! </div>
+                <div class="modal-premio-container text-center separation-40 separation-20-mobile light">
+                  <div>El premio consistirá en la entrega de </div>
+                  <div class="bold">$15.000.-</div>
+                </div>
+                <img id="modal-close" src="img/desktop/modal-close-blue.png" class="modal-close-img modal-sorteo" data-dismiss="modal">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- END MODAL -->
+
+        <!-- MODAL -->
+        <div class="modal fade" id="sorteo-modal-2" tabindex="-1" role="dialog" aria-labelledby="sorteo-modal-2">
+          <div class="modal-dialog modal-sorteo" role="document">
+            <div class="modal-content modal-sorteo">
+              <div id="modal-sorteado" class="modal-body modal-sorteo">
+                <img src="img/desktop/sorteo-modal-title.png">
+                <div class="sorteo-loft-modal-container light">
+                  <div class="title bold">¡Enhorabuena!</div>
+                  <hr>
+                  <div class="subtitle light">Has sumado una chance en el sorteo del loft</div>
+                </div>
+                <img id="modal-close-2" src="img/desktop/modal-close-blue.png" class="modal-close-img modal-sorteo" data-dismiss="modal">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- END MODAL -->
+      </div>
+    </section>
+
+    <!-- BEGIN FOOTER SECTION -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div>Bases Legales</div>
+          <div> | </div>
+          <div>Política de Cookies</div>
+          <div> | </div>
+          <div>Política de Privacidad</div>
+          <div> | </div>
+          <div>Términos y Condiciones</div>
+          <div> | </div>
+          <div>Contacto</div>
+          <div> | </div>
+          <div class="text-white">Copyright 2016</div>
+        </div>
+      </div>
+    </footer>
+    <!-- END FOOTER SECTION -->
+  </body>
+</html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Icons Collection</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    
+    <link href="css/style.css" rel="stylesheet">
+      
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+</head>
+
+<body id="page-top" class="index">
+
+    <!-- BEGIN MENU SECTION -->
+    <nav id="menu" class="navbar navbar-default navbar-fixed-top">
+      <div class="container full-width-mobile">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll container-mobile-fix">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+          </button>
+          <img src="./img/desktop/menu-icon.png" class="menu-icon hiddenMobile">
+          <img src="./img/mobile/menu-icon.png" class="menu-icon hiddenDesktop">
+        </div>
+
+        <div class="collapse navbar-collapse menu-navbar" id="bs-example-navbar-collapse-1">
+          <!-- DESKTOP MENU -->
+          <div class="menu-separation hiddenMobile">  
+            <div class="btn-group">
+              <img src="./img/desktop/menu-icon.png" class="menu-icon hiddenMobile">
+              <button type="button" class="btn btn-default dropdown-toggle menu-btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Mi Cuenta
+              </button>
+              <ul class="dropdown-menu">
+                <li><a href="#">Mi perfil</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Mis subastas</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Mis regalos</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Mis subastas grupales</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Cargar Icons</a></li>
+              </ul>
+            </div>
+            <div class="btn-group">
+              <button type="button" class="btn btn-default menu-btn">Subastas Activas</button>
+            </div>
+            <div class="btn-group relative">
+              <button type="button" class="btn btn-default menu-btn">Canjes Directos</button>
+              <div class="menu-box-green" style="display:block"> ¡Date prisa y llévate tu premio! </div>
+            </div>
+            <div class="btn-group">
+              <button type="button" class="btn btn-default dropdown-toggle menu-btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Información
+              </button>
+              <ul class="dropdown-menu">
+                <li><a href="#">Como Jugar</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Historia de Campaña</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Premios</a></li>    
+              </ul>
+            </div>
+            <div class="btn-group">
+              <button type="button" class="btn btn-default menu-btn">Ganadores</button>
+            </div>
+            <div class="btn-group">
+              <button type="button" class="btn btn-default menu-btn">Sorteo Final</button>
+            </div>
+            <div class="menu-item menu-item-name margin-left-40">
+              <div>
+                <div class="menu-item text-white">Bienvenido</div>
+                <div class="menu-item">Federico</div>
+              </div>
+              <div>
+                <div class="menu-item text-white">Tienes</div>
+                <div class="menu-item">14000</div>
+                <div class="menu-item">Icons</div>
+              </div>
+            </div>
+            <div class="menu-item menu-item-name">
+              <img src="img/desktop/menu-arrow.png">
+            </div>
+            <div class="menu-item relative margin-left-40-bis">
+              <img src="img/desktop/menu-new.png">
+              <div class="menu-box" style="display:block; z-index:1000000"> ¡Carga tus icons! </div>
+              <div class="menu-box" style="display:block"> 
+                <div class="text-small">Tus icons</div>
+                <div class="text-big">17000</div>
+              </div>
+            </div>
+            <div class="menu-item" style="display:none">
+              <img src="img/desktop/menu-logo.png">
+            </div>
+            <div class="menu-item">
+              <img src="img/desktop/menu-avatar.png">
+            </div>
+            <div class="menu-item relative">
+              <img src="img/desktop/menu-power.png">
+            </div>
+          </div>
+          <!-- END DESKTOP MENU -->
+
+          <!-- MOBILE MENU  -->
+          <div class="hiddenDesktop">
+            <div class="menu-mobile">
+              <div class="btn-group full-width-mobile" role="group">
+                <button id="cuenta-btn" type="button" class="btn btn-menu-mobile dropdown-toggle menu-text" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Mi Cuenta
+                  <span class="caret menu-mobile-caret arrow-down"></span>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-mobile">
+                  <li class="divider"></li>
+                  <li><a href="#">Mi Perfil</a></li>
+                  <li><a href="#">Mis Subastas</a></li>
+                  <li><a href="#">Mis Regalos</a></li>
+                  <li><a href="#">Mis Subastas Grupales</a></li>
+                  <li><a href="#">Cargar Icons</a></li>
+                </ul>
+              </div>
+              <div class="divider"></div>
+              <div class="menu-text"><a href="#">Subastas Activas</a></div>
+              <div class="divider"></div>
+              <div class="menu-text"><a href="#">Canjes Directos</a></div>
+              <div class="divider"></div>
+              <div class="btn-group full-width-mobile" role="group">
+                <button id="info-btn" type="button" class="btn btn-menu-mobile dropdown-toggle menu-text" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Información
+                  <span class="caret menu-mobile-caret arrow-down"></span>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-mobile">
+                  <li class="divider"></li>
+                  <li><a href="#">Como Jugar</a></li>
+                  <li><a href="#">Historia de Campaña</a></li>
+                  <li><a href="#">Premios</a></li>
+                </ul>
+              </div>
+              <div class="divider"></div>
+              <div class="menu-text"><a href="#">Ganadores</a></div>
+              <div class="divider"></div>
+              <div class="menu-text"><a href="#">Sorteo Final</a></div>
+              <div class="divider"></div>
+              <div class="menu-text"><a href="#">Salir</a></div>
+              <div class="divider"></div>
+            </div>
+          </div>
+          <!-- END MOBILE MENU  -->
+        </div>
+      </div>
+    </nav>
+
+    <section id="legales" class="legales-background">
+        <div class="container text-justify">
+          <div class="row text-center">
+            <h1 class="light">Bases Legales</h1>
+            <div class="ganadores-subtitle">Version vigente a 17/03/2016</div>
+          </div>
+          <hr>
+          <div class="separation-40 separation-mobile legales-text">
+            <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consectetur fringilla massa id malesuada. Duis vehicula ipsum sit amet euismod pellentesque. Integer a tempus leo. Ut sit amet magna sed velit fringilla viverra sit amet quis orci. Vestibulum auctor feugiat venenatis. Mauris eleifend odio sodales quam pharetra, in venenatis tellus consectetur. Vivamus elementum mauris massa, a sagittis nibh scelerisque ut. Suspendisse interdum diam sit amet lacinia varius. Mauris ut urna eu sem vehicula suscipit. Maecenas quis accumsan u rna. Aliquam erat volutpat. Ut ut consectetur lacus. Nulla placerat tortor in ante lacinia sodales. Fusce tincidunt lectus id eros pulvinar, vel lacinia metus tempus.</div>
+            <div class="separation-20">Etiam vehicula erat nibh, nec molestie libero cursus convallis. Proin dignissim enim vitae arcu dignissim, ac mollis eros varius. Nullam rutrum, nisl nec elementum semper, ipsum tortor aliquet nulla, at mollis ipsum justo non nunc. Phasellus a tempor nunc, id faucibus justo. Nam pretium at justo eget condimentum. Sed volutpat aliquam metus in imperdiet. Nam volutpat mauris eu ligula vehicula, a blandit nunc molestie. Mauris mattis eleifend erat, non dapibus odio scelerisque vitae. Phasellus vitae est pharetra, tincidunt quam eu, mattis lectus. Integer malesuada lacinia ipsum at finibus. Cras sed eros risus. Maecenas eget turpis in odio porttitor varius. Phasellus nec erat vel nisl consectetur tincidunt facilisis a nisl.</div>
+            <div class="separation-20">Mauris eu sem eu erat finibus sagittis. Curabitur sodales sem sit amet diam vulputate sagittis. Duis non laoreet ante. Vivamus in elit quis lectus posuere convallis. Proin vel scelerisque lorem. Sed sodales tellus id nisi vestibulum, eu vehicula elit luctus. Nam quis metus quis quam hendrerit dapibus. Nam non nisi neque. Fusce porta eros sapien, non molestie nisl efficitur ac. Aenean non libero eu nisi imperdiet feugiat nec finibus nisi. Etiam maximus nec erat a pulvinar.</div>
+            <div class="separation-20 legales-title">1. Lorem ipsum dolor sit amet,:</div>
+            <div>consectetur adipiscing elit. Nunc aliquam nisi vitae ex consequat, elementum vulputate velit auctor. Duis tempus gravida magna, at volutpat ipsum. Sed dapibus congue mauris eu lobortis. Sed euismod nibh dui, vel suscipit dolor tincidunt at. Cras sed scelerisque augue. Duis turpis dolor, commodo scelerisque placerat a, fermentum eu massa. Praesent id ullamcorper sem. Sed et dapibus justo, eget dignissim mauris. In ullamcorper metus tincidunt finibus efficitur. Aliquam aliquam bibendum nibh ac sagittis.</div>
+            <div class="separation-20">Praesent cursus scelerisque libero tempor malesuada. Curabitur nisi nisl, condimentum et enim quis, tempus volutpat ipsum. Vivamus fringilla sem vitae metus laoreet lacinia. Ut eu mauris eget neque vulputate consequat. Aliquam nec diam felis. Phasellus placerat leo eget dictum elementum. Quisque dolor est, mollis nec elit ut, tempor tempor tellus. Vestibulum et luctus tellus. Mauris venenatis egestas ligula, ac vehicula diam pretium ac. Duis convallis ligula quis risus scelerisque ultrices. Nam posuere risus eget nulla maximus, vel luctus nisi viverra. Donec aliquam imperdiet nisl eget tempus. Suspendisse ultricies ante a lacinia faucibus. Nulla dignissim justo ipsum, ac placerat nulla consequat ac.</div>
+            <div class="separation-20 legales-title">2. Nam id lacinia neque:</div>
+            <div>non aliquet arcu. Sed eget tellus scelerisque, ullamcorper magna non, bibendum tortor. Morbi fringilla ac eros nec fringilla. Nulla elementum dapibus eleifend. Nullam quis imperdiet nunc, eu lobortis ligula. Ut risus sapien, semper eget quam et, pretium laoreet eros. Aliquam sed tempor diam. Etiam posuere condimentum erat, vitae consectetur tellus tristique vel. Vestibulum vel dignissim augue. Praesent et ultricies velit. Curabitur sagittis, quam in pretium tincidunt, odio nunc vulputate nibh, sed hendrerit eros sapien fringilla nunc. Etiam ut dapibus lacus.</div>
+            <div class="separation-20">
+              <ul>
+                <li>Phasellus euismod pharetra laoreet. Phasellus nulla metus, tincidunt dignissim nunc vitae, vehicula posuere magna.</li>
+                <li>Duis consequat elit eget dolor tristique, et lobortis metus placerat. Nam erat nisl, eleifend eget sem ut, lobortis ultricies est. </li>
+                <li>Phasellus laoreet, nibh non ornare sagittis, nisi ante tempus lacus, vel malesuada nibh libero et urna. </li>
+                <li>Cras et nunc tincidunt, dignissim nisi sed, aliquet libero. In maximus semper ex non sollicitudin. Pellentesque condimentum et arcu sit amet condimentum. Etiam ac sagittis purus.</li>
+              </ul>
+            </div>
+            <div class="separation-20 legales-title">3. Donec volutpat luctus est tristique molestie:</div>
+            <div>Aenean vel maximus dolor. Integer eu placerat nibh. Fusce luctus erat et elit laoreet ultrices. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut imperdiet est vitae odio lobortis, vel molestie urna congue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In dignissim, risus ut tempus suscipit, mi orci interdum nulla, eget placerat ligula ipsum eget nisl. Cras semper porta hendrerit. Vestibulum ultricies ipsum et pretium fermentum. Quisque mi metus, facilisis sit amet fringilla nec, commodo at est. Donec congue, elit ut iaculis imperdiet, est tellus rutrum metus, a cursus orci elit sit amet ex. Proin mollis laoreet ligula, blandit elementum sapien pharetra. </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- BEGIN FOOTER SECTION -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div>Bases Legales</div>
+          <div> | </div>
+          <div>Política de Cookies</div>
+          <div> | </div>
+          <div>Política de Privacidad</div>
+          <div> | </div>
+          <div>Términos y Condiciones</div>
+          <div> | </div>
+          <div>Contacto</div>
+          <div> | </div>
+          <div class="text-white">Copyright 2016</div>
+        </div>
+      </div>
+    </footer>
+    <!-- END FOOTER SECTION -->
+</body>
+</html>

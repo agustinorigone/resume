@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Axion</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    
+    <!-- Important Owl stylesheet -->
+    <link rel="stylesheet" href="css/owl.carousel.css">
+     
+    <!-- Default Theme -->
+    <link rel="stylesheet" href="css/owl.theme.css">
+
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style-D2.css" rel="stylesheet">
+      
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Include js plugin -->
+    <script src="js/owl.carousel.js"></script> 
+</head>
+
+<body>
+  <script type="text/javascript">
+      $(document).ready(function() {
+
+      $("#home-slider").owlCarousel({
+
+        autoPlay : true,
+        navigation : true, // Show next and prev buttons
+        slideSpeed : 300,
+        paginationSpeed : 400,
+        singleItem:true,
+        //pagination:false
+
+      });
+
+      $("#info-slider").owlCarousel({
+
+        //autoPlay : true,
+        navigation : true, // Show next and prev buttons
+        slideSpeed : 300,
+        paginationSpeed : 400,
+        singleItem:true,
+        //pagination:false
+
+      });
+
+      $(".owl-buttons").remove();
+      $("#home-slider").append("<button type='button' class='btn btn-slider bold'>CONOZCAN MÁS</button>");
+  });
+  </script>
+
+  <header>
+    <div class="menu-container hidden-mobile">
+      <div class="header-logo inline hidden-mobile">
+        <img src="./Content/img/d2/header.png">
+      </div><div class="inline menu-left">
+        <span class="bold">Bienvenido,</span>
+        <span class="bold">Usuario 1</span>
+        <span class="margin-left-20"><a class="pointer">Cerrar Sesion</a></span>
+      </div><div class="inline menu-right">
+        <div class="input-group">
+          <input type="text" class="form-control border-rect search-input" aria-label="..." placeholder="Buscar...">
+          <div class="input-group-btn">
+            <button class="btn btn-default border-rect btn-search" type="button">
+              <span class="glyphicon glyphicon-zoom-in" aria-hidden="true"></span>
+            </button>
+          </div>
+        </div>
+      </div><div class="inline menu-center">
+        <span class="relative">
+          <button class="btn btn-default btn-menu dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            <span class="glyphicon glyphicon-menu-hamburger inline" aria-hidden="true"></span>
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+            <li><a href="#" class="bold">Reglamento y Fomularios</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#" class="bold">Qué es un plan de pensión</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#" class="bold">Preguntas frecuentes</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#" class="bold">Cambiar contraseña</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#" class="bold">Contacto</a></li>
+          </ul>
+        </span>
+      </div>
+    </div>
+  </header>
+
+  <section class="full-container">
+    <div>
+      <div class="col-md-6 container-left">
+        <button class="btn btn-default btn-menu dropdown-toggle hidden-desktop btn-menu-mobile" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+          <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+        </button>
+        <ul class="dropdown-menu hidden-desktop" aria-labelledby="dropdownMenu1">
+          <hr class="hidden-desktop">
+          <li><a href="#" class="bold">Reglamento y Fomularios</a></li>
+          <li role="separator" class="divider"></li>
+          <li><a href="#" class="bold">Qué es un plan de pensión</a></li>
+          <li role="separator" class="divider"></li>
+          <li><a href="#" class="bold">Preguntas frecuentes</a></li>
+          <li role="separator" class="divider"></li>
+          <li><a href="#" class="bold">Cambiar contraseña</a></li>
+          <li role="separator" class="divider"></li>
+          <li><a href="#" class="bold">Contacto</a></li>
+          <div class="separation-10">
+            <div class="input-group">
+              <input type="text" class="form-control border-rect search-input" aria-label="..." placeholder="Buscar...">
+              <div class="input-group-btn">
+                <button class="btn btn-default border-rect btn-search" type="button">
+                  <span class="glyphicon glyphicon-zoom-in" aria-hidden="true"></span>
+                </button>
+              </div>
+            </div>
+            <div class="user-info">
+              <div>
+                <span class="bold">Bienvenido,</span>
+                <span class="bold">Usuario 1</span>
+              </div>
+              <div class="underline"><a class="white pointer">Cerrar Sesion</a></div>
+            </div>
+          </div>  
+        </ul>
+        <div class="menu-img-mobile home hidden-desktop">
+          <img src="./Content/img/d2/mobile/header.png">
+        </div>
+        <div id="home-slider" class="owl-carousel owl-theme">
+          <div class="item">
+            <img src="./Content/img/d2/slider.jpg">
+            <div class="slider-text">
+              <div class="t1">Lorem ipsum</div>
+              <div class="t2 bold">Consectetur adipiscing</div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="./Content/img/d2/slider.jpg">
+            <div class="slider-text">
+              <div class="t1">Lorem ipsum</div>
+              <div class="t2 bold">Consectetur adipiscing</div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="./Content/img/d2/slider.jpg">
+            <div class="slider-text">
+              <div class="t1">Lorem ipsum</div>
+              <div class="t2 bold">Consectetur adipiscing</div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="./Content/img/d2/slider.jpg">
+            <div class="slider-text">
+              <div class="t1">Lorem ipsum</div>
+              <div class="t2 bold">Consectetur adipiscing</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 container-right">
+        <div class="item-container">
+          <div class="row-height">
+            <div class="col-md-6 col-height padding-0 item-img-mobile hidden-desktop">
+              <img class="menu-item-img hidden-mobile" src="./Content/img/d2/mi-cuenta.jpg">
+              <img class="menu-item-img hidden-desktop" src="./Content/img/d2/mobile/mi-cuenta.jpg">
+            </div>
+            <div class="col-md-6 col-height text center left-mobile item-text-mobile">
+              <a class="pointer" href="mi-cuenta-D2.html">
+                <div class="title bold">Mi Cuenta</div>
+                <div class="subtitle">Saldo y movimientos personales de su cuenta <span class="reddish pointer hidden-desktop">+</span></div>
+                <button type="button" class="btn btn-home-item bold hidden-mobile">Ingresar</button>
+                <div id="right-triangle" class="home hidden-mobile"></div>
+                <div id="left-triangle" class="home hidden-desktop"></div>
+              </a>
+            </div>
+            <div class="col-md-6 col-height padding-0 item-img-mobile hidden-mobile">
+              <img class="menu-item-img hidden-mobile" src="./Content/img/d2/mi-cuenta.jpg">
+              <img class="menu-item-img hidden-desktop" src="./Content/img/d2/mobile/mi-cuenta.jpg">
+            </div>
+          </div>
+        </div>
+        <div class="item-container">
+          <div class="row-height">
+            <div class="col-md-6 col-height padding-0 item-img-mobile">
+              <img class="menu-item-img hidden-mobile" src="./Content/img/d2/inversiones.jpg">
+              <img class="menu-item-img hidden-desktop" src="./Content/img/d2/mobile/inversiones.jpg">
+            </div>
+            <div class="col-md-6 col-height text item-text-mobile">
+              <a class="pointer" href="inversiones-D2.html">
+                <div class="title bold">Inversiones</div>
+                <div class="subtitle">
+                  <span>Su cartera de inversiones y otras opciones disponibles. </span>
+                  <span class="reddish pointer">+</span>
+                </div>
+                <div id="left-triangle" class="home"></div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="item-container hidden-mobile">
+          <div class="row-height">
+            <div class="col-md-6 col-height text t3">
+              <a class="pointer" href="inversiones-D2.html">
+                <div class="title bold t3">Proyector de Beneficios</div>
+                <div class="subtitle">
+                  <span>Simulen los beneficios económicos que podrían obtener ante al retiro ante distintos escenarios. </span>
+                  <span class="reddish pointer">+</span>
+                </div>
+                <div id="right-triangle" class="home"></div>
+              </a>
+            </div>
+            <div class="col-md-6 col-height padding-0">
+              <img class="menu-item-img" src="./Content/img/d2/beneficios.jpg">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="libreria-box hidden-desktop">
+        <img class="inline" src="./Content/img/d2/mobile/libreria.png">
+        <div class="inline libreria-text">Libreria de recursos</div>
+      </div>
+    </div>
+    <div class="inner-container hidden-mobile">
+      <div class="noticias-background">
+        <div class="col-md-3">
+          <div class="circle-background background-white" style="display:none">
+            <div class="pointer">Click aqui para ingresar al listado de noticias.</div>
+          </div>
+          <div class="circle-background">
+            <div class="info-slider-container">
+              <div id="info-slider" class="owl-carousel owl-theme">
+                <div class="item">
+                  <a href="">
+                    <div class="blue bold t1">Crisis Económica</div>
+                    <div class="white t2">
+                      <span>El crédito se recupera y crece hasta un 30% a nivel interanual. </span>
+                      <span class="blue pointer">+</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="item">
+                  <a href="">
+                    <div class="blue bold t1">Crisis Económica</div>
+                    <div class="white t2">
+                      <span>El crédito se recupera y crece hasta un 30% a nivel interanual. </span>
+                      <span class="blue pointer">+</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="item">
+                  <a href="">
+                    <div class="blue bold t1">Crisis Económica</div>
+                    <div class="white t2">
+                      <span>El crédito se recupera y crece hasta un 30% a nivel interanual. </span>
+                      <span class="blue pointer">+</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="item">
+                  <a href="">
+                    <div class="blue bold t1">Crisis Económica</div>
+                    <div class="white t2">
+                      <span>El crédito se recupera y crece hasta un 30% a nivel interanual. </span>
+                      <span class="blue pointer">+</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="circle-background background-white" style="display:none">
+            <a href="">
+              <div class="pointer">Respuestas a las preguntas sobre el Plan de Pensión de AXION energy.</div>
+            </a>
+          </div>
+          <div class="circle-background">
+            <a href="">
+              <img src="./Content/img/d2/q&a.png">
+              <div class="c2 white">Consultas y Q&As</div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="circle-background background-white" style="display: none">
+            <a href="">
+              <div class="pointer">Material de interes para una mejor educación financiera.</div>
+            </a>
+          </div>
+          <div class="circle-background">
+            <a href="">
+              <img src="./Content/img/d2/libreria.png">
+              <div class="c3 white">Librería de Recursos</div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="circle-background background-white" style="display: none">
+            <a href="">
+              <div class="pointer">Selección de cuentas de Twitter loremipsum lorem ipsum lorem.</div>
+            </a>
+          </div>
+          <div class="circle-background twitter">
+            <a href="">
+              <div class="right">
+                <div class="white">El dolar blue se mantiene en $15,10</div>
+                <div class="blue separation-10">
+                  <span class="bold">@iecoclarin</span>
+                  <span>18 ago.</span>
+                </div>
+              </div>
+              <div></div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>  
+  </section>
+
+  <footer>
+    <div class="container full-width-mobile">
+      <div class="footer-container">
+        <div class="footer-left">
+          <div class="hidden-mobile bold">Copyright ©2016 Towers Watson. All Rights Reserved.</div>
+          <div class="center-mobile">
+            <span class="footer-item"><a href="">Mapa del Sitio</a></span>
+            <span class="hidden-mobile"> | </span>
+            <hr class="hidden-desktop">
+            <span class="footer-item"><a href="">Terminos de Uso</a></span>
+            <span class="hidden-mobile"> | </span>
+            <hr class="hidden-desktop">
+            <span class="footer-item"><a href="">Políticas de Privacidad & Cookies</a></span>
+            <hr class="hidden-desktop">
+          </div>
+          <div class="hidden-desktop center-mobile bold">Copyright ©2016 Towers Watson.<br>All Rights Reserved.</div>
+        </div>
+        <div class="footer-right center-mobile">
+          <img src="./img/footer-logo.png">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

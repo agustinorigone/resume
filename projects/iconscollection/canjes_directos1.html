@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Icons Collection</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    
+    <link href="css/style.css" rel="stylesheet">
+      
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+</head>
+
+<body id="page-top" class="index">
+
+    <!-- BEGIN MENU SECTION -->
+    <nav id="menu" class="navbar navbar-default navbar-fixed-top">
+      <div class="container full-width-mobile">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll container-mobile-fix">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+          </button>
+          <img src="./img/desktop/menu-icon.png" class="menu-icon hiddenMobile">
+          <img src="./img/mobile/menu-icon.png" class="menu-icon hiddenDesktop">
+        </div>
+
+        <div class="collapse navbar-collapse menu-navbar" id="bs-example-navbar-collapse-1">
+          <!-- DESKTOP MENU -->
+          <div class="menu-separation hiddenMobile">  
+            <div class="btn-group">
+              <img src="./img/desktop/menu-icon.png" class="menu-icon hiddenMobile">
+              <button type="button" class="btn btn-default dropdown-toggle menu-btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Mi Cuenta
+              </button>
+              <ul class="dropdown-menu">
+                <li><a href="#">Mi perfil</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Mis subastas</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Mis regalos</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Mis subastas grupales</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Cargar Icons</a></li>
+              </ul>
+            </div>
+            <div class="btn-group">
+              <button type="button" class="btn btn-default menu-btn">Subastas Activas</button>
+            </div>
+            <div class="btn-group relative">
+              <button type="button" class="btn btn-default menu-btn">Canjes Directos</button>
+              <div class="menu-box-green" style="display:block"> ¡Date prisa y llévate tu premio! </div>
+            </div>
+            <div class="btn-group">
+              <button type="button" class="btn btn-default dropdown-toggle menu-btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Información
+              </button>
+              <ul class="dropdown-menu">
+                <li><a href="#">Como Jugar</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Historia de Campaña</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Premios</a></li>    
+              </ul>
+            </div>
+            <div class="btn-group">
+              <button type="button" class="btn btn-default menu-btn">Ganadores</button>
+            </div>
+            <div class="btn-group">
+              <button type="button" class="btn btn-default menu-btn">Sorteo Final</button>
+            </div>
+            <div class="menu-item menu-item-name margin-left-40">
+              <div>
+                <div class="menu-item text-white">Bienvenido</div>
+                <div class="menu-item">Federico</div>
+              </div>
+              <div>
+                <div class="menu-item text-white">Tienes</div>
+                <div class="menu-item">14000</div>
+                <div class="menu-item">Icons</div>
+              </div>
+            </div>
+            <div class="menu-item menu-item-name">
+              <img src="img/desktop/menu-arrow.png">
+            </div>
+            <div class="menu-item relative margin-left-40-bis">
+              <img src="img/desktop/menu-new.png">
+              <div class="menu-box" style="display:block; z-index:1000000"> ¡Carga tus icons! </div>
+              <div class="menu-box" style="display:block"> 
+                <div class="text-small">Tus icons</div>
+                <div class="text-big">17000</div>
+              </div>
+            </div>
+            <div class="menu-item" style="display:none">
+              <img src="img/desktop/menu-logo.png">
+            </div>
+            <div class="menu-item">
+              <img src="img/desktop/menu-avatar.png">
+            </div>
+            <div class="menu-item relative">
+              <img src="img/desktop/menu-power.png">
+            </div>
+          </div>
+          <!-- END DESKTOP MENU -->
+
+          <!-- MOBILE MENU  -->
+          <div class="hiddenDesktop">
+            <div class="menu-mobile">
+              <div class="btn-group full-width-mobile" role="group">
+                <button id="cuenta-btn" type="button" class="btn btn-menu-mobile dropdown-toggle menu-text" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Mi Cuenta
+                  <span class="caret menu-mobile-caret arrow-down"></span>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-mobile">
+                  <li class="divider"></li>
+                  <li><a href="#">Mi Perfil</a></li>
+                  <li><a href="#">Mis Subastas</a></li>
+                  <li><a href="#">Mis Regalos</a></li>
+                  <li><a href="#">Mis Subastas Grupales</a></li>
+                  <li><a href="#">Cargar Icons</a></li>
+                </ul>
+              </div>
+              <div class="divider"></div>
+              <div class="menu-text"><a href="#">Subastas Activas</a></div>
+              <div class="divider"></div>
+              <div class="menu-text"><a href="#">Canjes Directos</a></div>
+              <div class="divider"></div>
+              <div class="btn-group full-width-mobile" role="group">
+                <button id="info-btn" type="button" class="btn btn-menu-mobile dropdown-toggle menu-text" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Información
+                  <span class="caret menu-mobile-caret arrow-down"></span>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-mobile">
+                  <li class="divider"></li>
+                  <li><a href="#">Como Jugar</a></li>
+                  <li><a href="#">Historia de Campaña</a></li>
+                  <li><a href="#">Premios</a></li>
+                </ul>
+              </div>
+              <div class="divider"></div>
+              <div class="menu-text"><a href="#">Ganadores</a></div>
+              <div class="divider"></div>
+              <div class="menu-text"><a href="#">Sorteo Final</a></div>
+              <div class="divider"></div>
+              <div class="menu-text"><a href="#">Salir</a></div>
+              <div class="divider"></div>
+            </div>
+          </div>
+          <!-- END MOBILE MENU  -->
+        </div>
+      </div>
+    </nav>
+
+    <section id="canjes-directos" class="canjes-directos-background">
+        <div class="container">
+          <div class="row">
+            <img src="img/desktop/canjes-directos-title.png" class="canjes-directos-title-img hiddenMobile showTablet">
+            <img src="img/mobile/canjes-directos-title.png" class="canjes-directos-title-img hiddenDesktop hiddenTablet">
+          </div>
+          <div class="row separation-100 separation-mobile">
+            <div class="col-md-3 col-sm-6 separation-20-mobile">
+              <div class="blue-tag-img">
+                <div class="top">Canjeado</div>
+                <div class="bottom">
+                  <div class="inline">por</div>
+                  <div class="inline">12.000</div>
+                  <div class="inline">icons</div>
+                </div>
+              </div>
+              <!--<img src="img/desktop/blue-tag-text.png" class="blue-tag-text-img">-->
+              <img src="img/desktop/canje-directo-item.png">
+              <div class="canje s1 separation-10">Camara Acuática</div>
+              <div class="canje s2 margin-0">
+                <div class="inline bold">12.000</div>
+                <div class="inline">Icons</div>
+              </div>
+              <div class="canje s3 text-center">
+                <div class="inline left">
+                  <div>Stock Inicial</div>
+                  <div class="bold">25 Unidades</div>
+                </div><div class="inline right">
+                  <div>Stock Actual</div>
+                  <div class="bold">21 Unidades</div>
+                </div>
+              </div>
+              <button type="button" class="btn btn-default perfil-btn btn-volver btn-subasta">Canjear</button>
+            </div>
+            <div class="col-md-3 col-sm-6 separation-20-mobile">
+              <div class="green-tag-img">
+                <div class="top">Nuevas unidades</div>                
+              </div>
+              <img src="img/desktop/canje-directo-item.png">
+              <div class="canje s1 separation-10">Camara Acuática</div>
+              <div class="canje s2 margin-0">
+                <div class="inline bold">12.000</div>
+                <div class="inline">Icons</div>
+              </div>
+              <div class="canje s3 text-center">
+                <div class="inline left">
+                  <div>Stock Inicial</div>
+                  <div class="bold">25 Unidades</div>
+                </div><div class="inline right">
+                  <div>Stock Actual</div>
+                  <div class="bold">21 Unidades</div>
+                </div>
+              </div>
+              <button type="button" class="btn btn-default perfil-btn btn-volver btn-subasta">Canjear</button>
+            </div>
+            <div class="col-md-3 col-sm-6 separation-20-mobile">
+              <div class="green-tag-img red-tag-img">
+                <div class="top">Nuevas unidades</div>                
+              </div>
+              <img src="img/desktop/canje-directo-item.png">
+              <div class="canje s1 separation-10">Camara Acuática</div>
+              <div class="canje s2 margin-0">
+                <div class="inline bold">12.000</div>
+                <div class="inline">Icons</div>
+              </div>
+              <div class="canje s3 text-center">
+                <div class="inline left">
+                  <div>Stock Inicial</div>
+                  <div class="bold">25 Unidades</div>
+                </div><div class="inline right">
+                  <div>Stock Actual</div>
+                  <div class="bold">21 Unidades</div>
+                </div>
+              </div>
+              <button type="button" class="btn btn-default perfil-btn btn-volver btn-subasta">Canjear</button>
+            </div>
+            <div class="col-md-3 col-sm-6 separation-20-mobile">
+              <div class="green-tag-img purple-tag-img">
+                <div class="top">Nuevas unidades</div>                
+              </div>
+              <img src="img/desktop/canje-directo-item.png">
+              <div class="canje s1 separation-10">Camara Acuática</div>
+              <div class="canje s2 margin-0">
+                <div class="inline bold">12.000</div>
+                <div class="inline">Icons</div>
+              </div>
+              <div class="canje s3 text-center">
+                <div class="inline left">
+                  <div>Stock Inicial</div>
+                  <div class="bold">25 Unidades</div>
+                </div><div class="inline right">
+                  <div>Stock Actual</div>
+                  <div class="bold">21 Unidades</div>
+                </div>
+              </div>
+              <button type="button" class="btn btn-default perfil-btn btn-volver btn-subasta">Canjear</button>
+            </div>
+            <div class="col-md-3 col-sm-6 separation-30 separation-20-mobile">
+              <img src="img/desktop/canje-directo-item.png">
+              <div class="canje s1 separation-10">Camara Acuática</div>
+              <div class="canje s2 margin-0">
+                <div class="inline bold">12.000</div>
+                <div class="inline">Icons</div>
+              </div>
+              <div class="canje s3 text-center">
+                <div class="inline left">
+                  <div>Stock Inicial</div>
+                  <div class="bold">25 Unidades</div>
+                </div><div class="inline right">
+                  <div>Stock Actual</div>
+                  <div class="bold">21 Unidades</div>
+                </div>
+              </div>
+              <button type="button" class="btn btn-default perfil-btn btn-volver btn-subasta">Canjear</button>
+            </div>
+            <div class="col-md-3 col-sm-6 separation-30 separation-20-mobile">
+              <img src="img/desktop/canje-directo-item.png">
+              <div class="canje s1 separation-10">Camara Acuática</div>
+              <div class="canje s2 margin-0">
+                <div class="inline bold">12.000</div>
+                <div class="inline">Icons</div>
+              </div>
+              <div class="canje s3 text-center">
+                <div class="inline left">
+                  <div>Stock Inicial</div>
+                  <div class="bold">25 Unidades</div>
+                </div><div class="inline right">
+                  <div>Stock Actual</div>
+                  <div class="bold">21 Unidades</div>
+                </div>
+              </div>
+              <button type="button" class="btn btn-default perfil-btn btn-volver btn-subasta">Canjear</button>
+            </div>
+            <div class="col-md-3 col-sm-6 separation-30 separation-20-mobile">
+              <img src="img/desktop/canje-directo-item.png">
+              <div class="canje s1 separation-10">Camara Acuática</div>
+              <div class="canje s2 margin-0">
+                <div class="inline bold">12.000</div>
+                <div class="inline">Icons</div>
+              </div>
+              <div class="canje s3 text-center">
+                <div class="inline left">
+                  <div>Stock Inicial</div>
+                  <div class="bold">25 Unidades</div>
+                </div><div class="inline right">
+                  <div>Stock Actual</div>
+                  <div class="bold">21 Unidades</div>
+                </div>
+              </div>
+              <button type="button" class="btn btn-default perfil-btn btn-volver btn-subasta">Canjear</button>
+            </div>
+            <div class="col-md-3 col-sm-6 separation-30 separation-20-mobile">
+              <img src="img/desktop/canje-directo-item.png">
+              <div class="canje s1 separation-10">Camara Acuática</div>
+              <div class="canje s2 margin-0">
+                <div class="inline bold">12.000</div>
+                <div class="inline">Icons</div>
+              </div>
+              <div class="canje s3 text-center">
+                <div class="inline left">
+                  <div>Stock Inicial</div>
+                  <div class="bold">25 Unidades</div>
+                </div><div class="inline right">
+                  <div>Stock Actual</div>
+                  <div class="bold">21 Unidades</div>
+                </div>
+              </div>
+              <button type="button" class="btn btn-default perfil-btn btn-volver btn-subasta">Canjear</button>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- BEGIN FOOTER SECTION -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div>Bases Legales</div>
+          <div> | </div>
+          <div>Política de Cookies</div>
+          <div> | </div>
+          <div>Política de Privacidad</div>
+          <div> | </div>
+          <div>Términos y Condiciones</div>
+          <div> | </div>
+          <div>Contacto</div>
+          <div> | </div>
+          <div class="text-white">Copyright 2016</div>
+        </div>
+      </div>
+    </footer>
+    <!-- END FOOTER SECTION -->
+</body>
+</html>

@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Icons Collection</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    
+    <link href="css/style.css" rel="stylesheet">
+      
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+</head>
+
+<body id="page-top" class="index">
+
+    <script type="text/javascript">
+    $( document ).ready(function() {
+      $("#avatar-hombre-change").click(function(){
+        $("#avatar-hombre-selected").removeClass("hidden");
+        $("#avatar-mujer-selected").addClass("hidden");
+        
+        //HAIR
+        $("#avatar-hombre-hair").removeClass("hidden");
+        $("#avatar-mujer-hair").addClass("hidden");
+        $("#avatar-hombre-hair-select").removeClass("hidden");
+        $("#avatar-mujer-hair-select").addClass("hidden");
+
+        //BEARD
+        $("#avatar-hombre-beard").removeClass("hidden");
+        $("#avatar-mujer-beard").addClass("hidden");
+        $("#avatar-hombre-beard-select").removeClass("hidden");
+        $("#avatar-mujer-beard-select").addClass("hidden");
+
+        //EYE
+        $("#avatar-hombre-eye").removeClass("hidden");
+        $("#avatar-mujer-eye").addClass("hidden");
+        $("#avatar-hombre-eye-select").removeClass("hidden");
+        $("#avatar-mujer-eye-select").addClass("hidden");
+      });
+
+      $("#avatar-mujer-change").click(function(){
+        $("#avatar-mujer-selected").removeClass("hidden");
+        $("#avatar-hombre-selected").addClass("hidden");
+        
+        //HAIR
+        $("#avatar-mujer-hair").removeClass("hidden");
+        $("#avatar-hombre-hair").addClass("hidden");
+        $("#avatar-mujer-hair-select").removeClass("hidden");
+        $("#avatar-hombre-hair-select").addClass("hidden");
+
+        //BEARD
+        $("#avatar-mujer-beard").removeClass("hidden");
+        $("#avatar-hombre-beard").addClass("hidden");
+        $("#avatar-mujer-beard-select").removeClass("hidden");
+        $("#avatar-hombre-beard-select").addClass("hidden");
+
+        //EYES
+        $("#avatar-mujer-eye").removeClass("hidden");
+        $("#avatar-hombre-eye").addClass("hidden");
+        $("#avatar-mujer-eye-select").removeClass("hidden");
+        $("#avatar-hombre-eye-select").addClass("hidden");
+      });
+
+      $("#avatar-pelo-h-change-right").click(function(){
+        peloHChange(true);
+      });
+
+      $("#avatar-pelo-h-change-left").click(function(){
+        peloHChange(false);
+      });
+
+      $("#avatar-pelo-m-change-right").click(function(){
+        peloMChange(true);
+      });
+
+      $("#avatar-pelo-m-change-left").click(function(){
+        peloMChange(false);
+      });
+
+      $("#avatar-barba-h-change-right").click(function(){
+        barbaHChange(true);
+      });
+
+      $("#avatar-barba-h-change-left").click(function(){
+        barbaHChange(false);
+      });
+
+      $("#avatar-barba-m-change-right").click(function(){
+        barbaMChange(true);
+      });
+
+      $("#avatar-barba-m-change-left").click(function(){
+        barbaMChange(false);
+      });
+
+      $("#avatar-ojo-h-change-right").click(function(){
+        ojoHChange(true);
+      });
+
+      $("#avatar-ojo-h-change-left").click(function(){
+        ojoHChange(false);
+      });
+
+      $("#avatar-ojo-m-change-right").click(function(){
+        ojoMChange(true);  
+      });
+
+      $("#avatar-ojo-m-change-left").click(function(){
+        ojoMChange(false);  
+      });
+    });
+
+    function peloHChange(right){
+      var id = $(".avatar-pelo-img.h.active").attr("id");
+      id = id.replace("pelo-h-selected-","");
+      if(isNaN(id)){
+        id = id.replace("pelo-h-select-","");
+      }
+      $(".avatar-pelo-img.h.active").addClass("hidden");
+      $(".avatar-pelo-img.h.active").removeClass("active");
+      
+      //NEW ID
+      if(right){
+        id = parseInt(id) + 1;  
+      }else{
+        id = parseInt(id) - 1;  
+      }
+      
+      //10 - cantidad de imagenes de pelo hombre
+      if(id > 10){
+        id = 1;
+      }
+
+      if(id < 1){
+        id = 10;
+      }
+      
+      id = "pelo-h-select-" + id.toString();
+      $("#"+id).removeClass("hidden");
+      $("#"+id).addClass("active");
+
+      id = id.replace("pelo-h-select-","");
+      id = "pelo-h-selected-" + id.toString();
+      $("#"+id).removeClass("hidden");
+      $("#"+id).addClass("active");
+    }
+
+    function peloMChange(right){
+      var id = $(".avatar-pelo-img.m.active").attr("id");
+      id = id.replace("pelo-m-selected-","");
+      if(isNaN(id)){
+        id = id.replace("pelo-m-select-","");
+      }
+      $(".avatar-pelo-img.m.active").addClass("hidden");
+      $(".avatar-pelo-img.m.active").removeClass("active");
+      
+      //NEW ID
+      if(right){
+        id = parseInt(id) + 1;  
+      }else{
+        id = parseInt(id) - 1;  
+      }
+      
+      //10 - cantidad de imagenes de pelo hombre
+      if(id > 10){
+        id = 1;
+      }
+
+      if(id < 1){
+        id = 10;
+      }
+      
+      id = "pelo-m-select-" + id.toString();
+      $("#"+id).removeClass("hidden");
+      $("#"+id).addClass("active");
+
+      id = id.replace("pelo-m-select-","");
+      id = "pelo-m-selected-" + id.toString();
+      $("#"+id).removeClass("hidden");
+      $("#"+id).addClass("active");
+    }
+
+    function barbaHChange(right){
+      var id = $(".avatar-barba-img.h.active").attr("id");
+      id = id.replace("barba-h-selected-","");
+      if(isNaN(id)){
+        id = id.replace("barba-h-select-","");
+      }
+      $(".avatar-barba-img.h.active").addClass("hidden");
+      $(".avatar-barba-img.h.active").removeClass("active");
+      
+      //NEW ID
+      if(right){
+        id = parseInt(id) + 1;  
+      }else{
+        id = parseInt(id) - 1;  
+      }
+      
+      if(id > 8){
+        id = 1;
+      }
+
+      if(id < 1){
+        id = 8;
+      }
+
+      id = "barba-h-select-" + id.toString();
+      $("#"+id).removeClass("hidden");
+      $("#"+id).addClass("active");
+
+      id = id.replace("barba-h-select-","");
+      id = "barba-h-selected-" + id.toString();
+      $("#"+id).removeClass("hidden");
+      $("#"+id).addClass("active");
+    }
+
+    function barbaMChange(right){
+      var id = $(".avatar-barba-img.m.active").attr("id");
+      id = id.replace("barba-m-selected-","");
+      if(isNaN(id)){
+        id = id.replace("barba-m-select-","");
+      }
+      $(".avatar-barba-img.m.active").addClass("hidden");
+      $(".avatar-barba-img.m.active").removeClass("active");
+      
+      //NEW ID
+      if(right){
+        id = parseInt(id) + 1;  
+      }else{
+        id = parseInt(id) - 1;  
+      }
+      
+      if(id > 10){
+        id = 1;
+      }
+
+      if(id < 1){
+        id = 10;
+      }
+      
+      id = "barba-m-select-" + id.toString();
+      $("#"+id).removeClass("hidden");
+      $("#"+id).addClass("active");
+
+      id = id.replace("barba-m-select-","");
+      id = "barba-m-selected-" + id.toString();
+      $("#"+id).removeClass("hidden");
+      $("#"+id).addClass("active");
+    }
+
+    function ojoHChange(right){
+      var id = $(".avatar-ojo-img.h.active").attr("id");
+      id = id.replace("ojo-h-selected-","");
+      if(isNaN(id)){
+        id = id.replace("ojo-h-select-","");
+      }
+      $(".avatar-ojo-img.h.active").addClass("hidden");
+      $(".avatar-ojo-img.h.active").removeClass("active");
+      
+      //NEW ID
+      if(right){
+        id = parseInt(id) + 1;  
+      }else{
+        id = parseInt(id) - 1;  
+      }
+      
+      if(id > 13){
+        id = 1;
+      }
+
+      if(id < 1){
+        id = 13;
+      }
+      
+      id = "ojo-h-select-" + id.toString();
+      $("#"+id).removeClass("hidden");
+      $("#"+id).addClass("active");
+
+      id = id.replace("ojo-h-select-","");
+      id = "ojo-h-selected-" + id.toString();
+      $("#"+id).removeClass("hidden");
+      $("#"+id).addClass("active");
+    }
+
+    function ojoMChange(right){
+      var id = $(".avatar-ojo-img.m.active").attr("id");
+      id = id.replace("ojo-m-selected-","");
+      if(isNaN(id)){
+        id = id.replace("ojo-m-select-","");
+      }
+      $(".avatar-ojo-img.m.active").addClass("hidden");
+      $(".avatar-ojo-img.m.active").removeClass("active");
+      
+      //NEW ID
+      if(right){
+        id = parseInt(id) + 1;  
+      }else{
+        id = parseInt(id) - 1;  
+      }
+      
+      if(id > 13){
+        id = 1;
+      }
+
+      if(id < 1){
+        id = 13;
+      }
+
+      id = "ojo-m-select-" + id.toString();
+      $("#"+id).removeClass("hidden");
+      $("#"+id).addClass("active");
+
+      id = id.replace("ojo-m-select-","");
+      id = "ojo-m-selected-" + id.toString();
+      $("#"+id).removeClass("hidden");
+      $("#"+id).addClass("active");
+    }
+    </script>
+
+    <!-- BEGIN MENU SECTION -->
+    <nav id="menu" class="navbar navbar-default navbar-fixed-top">
+      <div class="container full-width-mobile">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll container-mobile-fix">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+          </button>
+          <img src="./img/desktop/menu-icon.png" class="menu-icon hiddenMobile">
+          <img src="./img/mobile/menu-icon.png" class="menu-icon hiddenDesktop">
+        </div>
+
+        <div class="collapse navbar-collapse menu-navbar" id="bs-example-navbar-collapse-1">
+          <!-- DESKTOP MENU -->
+          <div class="menu-separation hiddenMobile">  
+            <div class="btn-group">
+              <img src="./img/desktop/menu-icon.png" class="menu-icon hiddenMobile">
+              <button type="button" class="btn btn-default dropdown-toggle menu-btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Mi Cuenta
+              </button>
+              <ul class="dropdown-menu">
+                <li><a href="#">Mi perfil</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Mis subastas</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Mis regalos</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Mis subastas grupales</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Cargar Icons</a></li>
+              </ul>
+            </div>
+            <div class="btn-group">
+              <button type="button" class="btn btn-default menu-btn">Subastas Activas</button>
+            </div>
+            <div class="btn-group relative">
+              <button type="button" class="btn btn-default menu-btn">Canjes Directos</button>
+              <div class="menu-box-green" style="display:block"> ¡Date prisa y llévate tu premio! </div>
+            </div>
+            <div class="btn-group">
+              <button type="button" class="btn btn-default dropdown-toggle menu-btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Información
+              </button>
+              <ul class="dropdown-menu">
+                <li><a href="#">Como Jugar</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Historia de Campaña</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Premios</a></li>    
+              </ul>
+            </div>
+            <div class="btn-group">
+              <button type="button" class="btn btn-default menu-btn">Ganadores</button>
+            </div>
+            <div class="btn-group">
+              <button type="button" class="btn btn-default menu-btn">Sorteo Final</button>
+            </div>
+            <div class="menu-item menu-item-name margin-left-40">
+              <div>
+                <div class="menu-item text-white">Bienvenido</div>
+                <div class="menu-item">Federico</div>
+              </div>
+              <div>
+                <div class="menu-item text-white">Tienes</div>
+                <div class="menu-item">14000</div>
+                <div class="menu-item">Icons</div>
+              </div>
+            </div>
+            <div class="menu-item menu-item-name">
+              <img src="img/desktop/menu-arrow.png">
+            </div>
+            <div class="menu-item relative margin-left-40-bis">
+              <img src="img/desktop/menu-new.png">
+              <div class="menu-box" style="display:block; z-index:1000000"> ¡Carga tus icons! </div>
+              <div class="menu-box" style="display:block"> 
+                <div class="text-small">Tus icons</div>
+                <div class="text-big">17000</div>
+              </div>
+            </div>
+            <div class="menu-item" style="display:none">
+              <img src="img/desktop/menu-logo.png">
+            </div>
+            <div class="menu-item">
+              <img src="img/desktop/menu-avatar.png">
+            </div>
+            <div class="menu-item relative">
+              <img src="img/desktop/menu-power.png">
+            </div>
+          </div>
+          <!-- END DESKTOP MENU -->
+
+          <!-- MOBILE MENU  -->
+          <div class="hiddenDesktop">
+            <div class="menu-mobile">
+              <div class="btn-group full-width-mobile" role="group">
+                <button id="cuenta-btn" type="button" class="btn btn-menu-mobile dropdown-toggle menu-text" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Mi Cuenta
+                  <span class="caret menu-mobile-caret arrow-down"></span>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-mobile">
+                  <li class="divider"></li>
+                  <li><a href="#">Mi Perfil</a></li>
+                  <li><a href="#">Mis Subastas</a></li>
+                  <li><a href="#">Mis Regalos</a></li>
+                  <li><a href="#">Mis Subastas Grupales</a></li>
+                  <li><a href="#">Cargar Icons</a></li>
+                </ul>
+              </div>
+              <div class="divider"></div>
+              <div class="menu-text"><a href="#">Subastas Activas</a></div>
+              <div class="divider"></div>
+              <div class="menu-text"><a href="#">Canjes Directos</a></div>
+              <div class="divider"></div>
+              <div class="btn-group full-width-mobile" role="group">
+                <button id="info-btn" type="button" class="btn btn-menu-mobile dropdown-toggle menu-text" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Información
+                  <span class="caret menu-mobile-caret arrow-down"></span>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-mobile">
+                  <li class="divider"></li>
+                  <li><a href="#">Como Jugar</a></li>
+                  <li><a href="#">Historia de Campaña</a></li>
+                  <li><a href="#">Premios</a></li>
+                </ul>
+              </div>
+              <div class="divider"></div>
+              <div class="menu-text"><a href="#">Ganadores</a></div>
+              <div class="divider"></div>
+              <div class="menu-text"><a href="#">Sorteo Final</a></div>
+              <div class="divider"></div>
+              <div class="menu-text"><a href="#">Salir</a></div>
+              <div class="divider"></div>
+            </div>
+          </div>
+          <!-- END MOBILE MENU  -->
+        </div>
+      </div>
+    </nav>
+
+    <section id="perfil-crear-avatar" class="perfil-background-crear">
+        <div class="container">
+            <div class="crear-avatar-container relative">
+              <div class="crear-avatar-container-left">
+                <div class="crear-avatar-title light">Crea tu perfil</div>
+                <div class="avatar-back-container relative">
+                  <img id="avatar-hombre-selected" src="img/desktop/avatars/Hombre.png" class="avatar-back">
+                  <img id="avatar-mujer-selected" src="img/desktop/avatars/Mujer.png" class="avatar-back hidden">
+                  <div id="avatar-hombre-hair" class="avatar-component">
+                    <img id="pelo-h-selected-1" src="img/desktop/avatars/Hombre-Pelo-1.png" class="avatar-pelo-img h active">
+                    <img id="pelo-h-selected-2" src="img/desktop/avatars/Hombre-Pelo-2.png" class="avatar-pelo-img h hidden">
+                    <img id="pelo-h-selected-3" src="img/desktop/avatars/Hombre-Pelo-3.png" class="avatar-pelo-img h hidden">
+                    <img id="pelo-h-selected-4" src="img/desktop/avatars/Hombre-Pelo-4.png" class="avatar-pelo-img h hidden">
+                    <img id="pelo-h-selected-5" src="img/desktop/avatars/Hombre-Pelo-5.png" class="avatar-pelo-img h hidden">
+                    <img id="pelo-h-selected-6" src="img/desktop/avatars/Hombre-Pelo-6.png" class="avatar-pelo-img h hidden">
+                    <img id="pelo-h-selected-7" src="img/desktop/avatars/Hombre-Pelo-7.png" class="avatar-pelo-img h hidden">
+                    <img id="pelo-h-selected-8" src="img/desktop/avatars/Hombre-Pelo-8.png" class="avatar-pelo-img h hidden">
+                    <img id="pelo-h-selected-9" src="img/desktop/avatars/Hombre-Pelo-9.png" class="avatar-pelo-img h hidden">
+                    <img id="pelo-h-selected-10" src="img/desktop/avatars/Hombre-Pelo-10.png" class="avatar-pelo-img h hidden">
+                  </div>
+                  <div id="avatar-mujer-hair" class="avatar-component hidden">
+                    <img id="pelo-m-selected-1" src="img/desktop/avatars/Mujer-Pelo-1.png" class="avatar-pelo-img m active">
+                    <img id="pelo-m-selected-2" src="img/desktop/avatars/Mujer-Pelo-2.png" class="avatar-pelo-img m hidden">
+                    <img id="pelo-m-selected-3" src="img/desktop/avatars/Mujer-Pelo-3.png" class="avatar-pelo-img m hidden">
+                    <img id="pelo-m-selected-4" src="img/desktop/avatars/Mujer-Pelo-4.png" class="avatar-pelo-img m hidden">
+                    <img id="pelo-m-selected-5" src="img/desktop/avatars/Mujer-Pelo-5.png" class="avatar-pelo-img m hidden">
+                    <img id="pelo-m-selected-6" src="img/desktop/avatars/Mujer-Pelo-6.png" class="avatar-pelo-img m hidden">
+                    <img id="pelo-m-selected-7" src="img/desktop/avatars/Mujer-Pelo-7.png" class="avatar-pelo-img m hidden">
+                    <img id="pelo-m-selected-8" src="img/desktop/avatars/Mujer-Pelo-8.png" class="avatar-pelo-img m hidden">
+                    <img id="pelo-m-selected-9" src="img/desktop/avatars/Mujer-Pelo-9.png" class="avatar-pelo-img m hidden">
+                    <img id="pelo-m-selected-10" src="img/desktop/avatars/Mujer-Pelo-10.png" class="avatar-pelo-img m hidden">
+                  </div>
+                  <div id="avatar-hombre-beard" class="avatar-component">
+                    <img id="barba-h-selected-1" src="img/desktop/avatars/Hombre-BarbasBigotes-1.png" class="avatar-barba-img h active">
+                    <img id="barba-h-selected-2" src="img/desktop/avatars/Hombre-BarbasBigotes-2.png" class="avatar-barba-img h hidden">
+                    <img id="barba-h-selected-3" src="img/desktop/avatars/Hombre-BarbasBigotes-3.png" class="avatar-barba-img h hidden">
+                    <img id="barba-h-selected-4" src="img/desktop/avatars/Hombre-BarbasBigotes-4.png" class="avatar-barba-img h hidden">
+                    <img id="barba-h-selected-5" src="img/desktop/avatars/Hombre-BarbasBigotes-5.png" class="avatar-barba-img h hidden">
+                    <img id="barba-h-selected-6" src="img/desktop/avatars/Hombre-BarbasBigotes-6.png" class="avatar-barba-img h hidden">
+                    <img id="barba-h-selected-7" src="img/desktop/avatars/Hombre-BarbasBigotes-7.png" class="avatar-barba-img h hidden">
+                    <img id="barba-h-selected-8" src="img/desktop/avatars/Hombre-BarbasBigotes-8.png" class="avatar-barba-img h hidden">
+                  </div>
+                  <div id="avatar-mujer-beard" class="avatar-component hidden">
+                    <img id="barba-m-selected-1" src="img/desktop/avatars/Mujer-Boca-1.png" class="avatar-barba-img m active">
+                    <img id="barba-m-selected-2" src="img/desktop/avatars/Mujer-Boca-2.png" class="avatar-barba-img m hidden">
+                    <img id="barba-m-selected-3" src="img/desktop/avatars/Mujer-Boca-3.png" class="avatar-barba-img m hidden">
+                    <img id="barba-m-selected-4" src="img/desktop/avatars/Mujer-Boca-4.png" class="avatar-barba-img m hidden">
+                    <img id="barba-m-selected-5" src="img/desktop/avatars/Mujer-Boca-5.png" class="avatar-barba-img m hidden">
+                    <img id="barba-m-selected-6" src="img/desktop/avatars/Mujer-Boca-6.png" class="avatar-barba-img m hidden">
+                    <img id="barba-m-selected-7" src="img/desktop/avatars/Mujer-Boca-7.png" class="avatar-barba-img m hidden">
+                    <img id="barba-m-selected-8" src="img/desktop/avatars/Mujer-Boca-8.png" class="avatar-barba-img m hidden">
+                    <img id="barba-m-selected-9" src="img/desktop/avatars/Mujer-Boca-9.png" class="avatar-barba-img m hidden">
+                    <img id="barba-m-selected-10" src="img/desktop/avatars/Mujer-Boca-10.png" class="avatar-barba-img m hidden">
+                  </div>
+                  <div id="avatar-hombre-eye" class="avatar-component">
+                    <img id="ojo-h-selected-1" src="img/desktop/avatars/Hombre-Ojos-1.png" class="avatar-ojo-img h active">
+                    <img id="ojo-h-selected-2" src="img/desktop/avatars/Hombre-Ojos-2.png" class="avatar-ojo-img h hidden">
+                    <img id="ojo-h-selected-3" src="img/desktop/avatars/Hombre-Ojos-3.png" class="avatar-ojo-img h hidden">
+                    <img id="ojo-h-selected-4" src="img/desktop/avatars/Hombre-Ojos-4.png" class="avatar-ojo-img h hidden">
+                    <img id="ojo-h-selected-5" src="img/desktop/avatars/Hombre-Ojos-5.png" class="avatar-ojo-img h hidden">
+                    <img id="ojo-h-selected-6" src="img/desktop/avatars/Hombre-Ojos-6.png" class="avatar-ojo-img h hidden">
+                    <img id="ojo-h-selected-7" src="img/desktop/avatars/Hombre-Ojos-7.png" class="avatar-ojo-img h hidden">
+                    <img id="ojo-h-selected-8" src="img/desktop/avatars/Hombre-Ojos-8.png" class="avatar-ojo-img h hidden">
+                    <img id="ojo-h-selected-9" src="img/desktop/avatars/Hombre-Ojos-9.png" class="avatar-ojo-img h hidden">
+                    <img id="ojo-h-selected-10" src="img/desktop/avatars/Hombre-Ojos-10.png" class="avatar-ojo-img h hidden">
+                    <img id="ojo-h-selected-11" src="img/desktop/avatars/Hombre-Ojos-11.png" class="avatar-ojo-img h hidden">
+                    <img id="ojo-h-selected-12" src="img/desktop/avatars/Hombre-Ojos-12.png" class="avatar-ojo-img h hidden">
+                    <img id="ojo-h-selected-13" src="img/desktop/avatars/Hombre-Ojos-13.png" class="avatar-ojo-img h hidden">
+                  </div>
+                  <div id="avatar-mujer-eye" class="avatar-component hidden">
+                    <img id="ojo-m-selected-1" src="img/desktop/avatars/Mujer-Ojos-1.png" class="avatar-ojo-img m active">
+                    <img id="ojo-m-selected-2" src="img/desktop/avatars/Mujer-Ojos-2.png" class="avatar-ojo-img m hidden">
+                    <img id="ojo-m-selected-3" src="img/desktop/avatars/Mujer-Ojos-3.png" class="avatar-ojo-img m hidden">
+                    <img id="ojo-m-selected-4" src="img/desktop/avatars/Mujer-Ojos-4.png" class="avatar-ojo-img m hidden">
+                    <img id="ojo-m-selected-5" src="img/desktop/avatars/Mujer-Ojos-5.png" class="avatar-ojo-img m hidden">
+                    <img id="ojo-m-selected-6" src="img/desktop/avatars/Mujer-Ojos-6.png" class="avatar-ojo-img m hidden">
+                    <img id="ojo-m-selected-7" src="img/desktop/avatars/Mujer-Ojos-7.png" class="avatar-ojo-img m hidden">
+                    <img id="ojo-m-selected-8" src="img/desktop/avatars/Mujer-Ojos-8.png" class="avatar-ojo-img m hidden">
+                    <img id="ojo-m-selected-9" src="img/desktop/avatars/Mujer-Ojos-9.png" class="avatar-ojo-img m hidden">
+                    <img id="ojo-m-selected-10" src="img/desktop/avatars/Mujer-Ojos-10.png" class="avatar-ojo-img m hidden">
+                    <img id="ojo-m-selected-11" src="img/desktop/avatars/Mujer-Ojos-11.png" class="avatar-ojo-img m hidden">
+                    <img id="ojo-m-selected-12" src="img/desktop/avatars/Mujer-Ojos-12.png" class="avatar-ojo-img m hidden">
+                    <img id="ojo-m-selected-13" src="img/desktop/avatars/Mujer-Ojos-13.png" class="avatar-ojo-img m hidden">
+                    <img id="ojo-m-selected-10" src="img/desktop/avatars/Mujer-Ojos-14.png" class="avatar-ojo-img m hidden">
+                    <img id="ojo-m-selected-11" src="img/desktop/avatars/Mujer-Ojos-15.png" class="avatar-ojo-img m hidden">
+                    <img id="ojo-m-selected-12" src="img/desktop/avatars/Mujer-Ojos-16.png" class="avatar-ojo-img m hidden">
+                    <img id="ojo-m-selected-13" src="img/desktop/avatars/Mujer-Ojos-17.png" class="avatar-ojo-img m hidden">
+                  </div>
+                </div>
+                <div>
+                  <div class="inline">
+                    <img id="avatar-hombre-change" src="img/desktop/hombre.png" class="pointer">
+                    <div class="avatar-gender-text">hombre</div>
+                  </div>
+                  <div class="inline">
+                    <img id="avatar-mujer-change" src="img/desktop/mujer.png" class="pointer">
+                    <div class="avatar-gender-text">mujer</div>
+                  </div>
+                </div>
+              </div><div class="crear-avatar-container-middle">
+                <div id="avatar-hombre-hair-select" class="crear-box relative">
+                  <img id="pelo-h-select-1" src="img/desktop/avatars/Hombre-Pelo-1.png" class="avatar-pelo-img h active">
+                  <img id="pelo-h-select-2" src="img/desktop/avatars/Hombre-Pelo-2.png" class="avatar-pelo-img h hidden">
+                  <img id="pelo-h-select-3" src="img/desktop/avatars/Hombre-Pelo-3.png" class="avatar-pelo-img h hidden">
+                  <img id="pelo-h-select-4" src="img/desktop/avatars/Hombre-Pelo-4.png" class="avatar-pelo-img h hidden">
+                  <img id="pelo-h-select-5" src="img/desktop/avatars/Hombre-Pelo-5.png" class="avatar-pelo-img h hidden">
+                  <img id="pelo-h-select-6" src="img/desktop/avatars/Hombre-Pelo-6.png" class="avatar-pelo-img h hidden">
+                  <img id="pelo-h-select-7" src="img/desktop/avatars/Hombre-Pelo-7.png" class="avatar-pelo-img h hidden">
+                  <img id="pelo-h-select-8" src="img/desktop/avatars/Hombre-Pelo-8.png" class="avatar-pelo-img h hidden">
+                  <img id="pelo-h-select-9" src="img/desktop/avatars/Hombre-Pelo-9.png" class="avatar-pelo-img h hidden">
+                  <img id="pelo-h-select-10" src="img/desktop/avatars/Hombre-Pelo-10.png" class="avatar-pelo-img h hidden">
+                  <img id="avatar-pelo-h-change-right" src="img/desktop/right-arrow.png" class="avatar-change">
+                  <img id="avatar-pelo-h-change-left" src="img/desktop/left-arrow.png" class="avatar-change avatar-change-left">
+                </div>
+                <div id="avatar-mujer-hair-select" class="crear-box relative hidden">
+                  <img id="pelo-m-select-1" src="img/desktop/avatars/Mujer-Pelo-1.png" class="avatar-pelo-img m active">
+                  <img id="pelo-m-select-2" src="img/desktop/avatars/Mujer-Pelo-2.png" class="avatar-pelo-img m hidden">
+                  <img id="pelo-m-select-3" src="img/desktop/avatars/Mujer-Pelo-3.png" class="avatar-pelo-img m hidden">
+                  <img id="pelo-m-select-4" src="img/desktop/avatars/Mujer-Pelo-4.png" class="avatar-pelo-img m hidden">
+                  <img id="pelo-m-select-5" src="img/desktop/avatars/Mujer-Pelo-5.png" class="avatar-pelo-img m hidden">
+                  <img id="pelo-m-select-6" src="img/desktop/avatars/Mujer-Pelo-6.png" class="avatar-pelo-img m hidden">
+                  <img id="pelo-m-select-7" src="img/desktop/avatars/Mujer-Pelo-7.png" class="avatar-pelo-img m hidden">
+                  <img id="pelo-m-select-8" src="img/desktop/avatars/Mujer-Pelo-8.png" class="avatar-pelo-img m hidden">
+                  <img id="pelo-m-select-9" src="img/desktop/avatars/Mujer-Pelo-9.png" class="avatar-pelo-img m hidden">
+                  <img id="pelo-m-select-10" src="img/desktop/avatars/Mujer-Pelo-10.png" class="avatar-pelo-img m hidden">
+                  <img id="avatar-pelo-m-change-right" src="img/desktop/right-arrow.png" class="avatar-change">
+                  <img id="avatar-pelo-m-change-left" src="img/desktop/left-arrow.png" class="avatar-change avatar-change-left">
+                </div>
+                <div id="avatar-hombre-beard-select" class="crear-box relative">
+                  <img id="barba-h-select-1" src="img/desktop/avatars/Hombre-BarbasBigotes-1.png" class="avatar-barba-img h active">
+                  <img id="barba-h-select-2" src="img/desktop/avatars/Hombre-BarbasBigotes-2.png" class="avatar-barba-img h hidden">
+                  <img id="barba-h-select-3" src="img/desktop/avatars/Hombre-BarbasBigotes-3.png" class="avatar-barba-img h hidden">
+                  <img id="barba-h-select-4" src="img/desktop/avatars/Hombre-BarbasBigotes-4.png" class="avatar-barba-img h hidden">
+                  <img id="barba-h-select-5" src="img/desktop/avatars/Hombre-BarbasBigotes-5.png" class="avatar-barba-img h hidden">
+                  <img id="barba-h-select-6" src="img/desktop/avatars/Hombre-BarbasBigotes-6.png" class="avatar-barba-img h hidden">
+                  <img id="barba-h-select-7" src="img/desktop/avatars/Hombre-BarbasBigotes-7.png" class="avatar-barba-img h hidden">
+                  <img id="barba-h-select-8" src="img/desktop/avatars/Hombre-BarbasBigotes-8.png" class="avatar-barba-img h hidden">
+                  <img id="avatar-barba-h-change-right" src="img/desktop/right-arrow.png" class="avatar-change">
+                  <img id="avatar-barba-h-change-left" src="img/desktop/left-arrow.png" class="avatar-change avatar-change-left">
+                </div>
+                <div id="avatar-mujer-beard-select" class="crear-box relative hidden">
+                  <img id="barba-m-select-1" src="img/desktop/avatars/Mujer-Boca-1.png" class="avatar-barba-img m active">
+                  <img id="barba-m-select-2" src="img/desktop/avatars/Mujer-Boca-2.png" class="avatar-barba-img m hidden">
+                  <img id="barba-m-select-3" src="img/desktop/avatars/Mujer-Boca-3.png" class="avatar-barba-img m hidden">
+                  <img id="barba-m-select-4" src="img/desktop/avatars/Mujer-Boca-4.png" class="avatar-barba-img m hidden">
+                  <img id="barba-m-select-5" src="img/desktop/avatars/Mujer-Boca-5.png" class="avatar-barba-img m hidden">
+                  <img id="barba-m-select-6" src="img/desktop/avatars/Mujer-Boca-6.png" class="avatar-barba-img m hidden">
+                  <img id="barba-m-select-7" src="img/desktop/avatars/Mujer-Boca-7.png" class="avatar-barba-img m hidden">
+                  <img id="barba-m-select-8" src="img/desktop/avatars/Mujer-Boca-8.png" class="avatar-barba-img m hidden">
+                  <img id="barba-m-select-9" src="img/desktop/avatars/Mujer-Boca-9.png" class="avatar-barba-img m hidden">
+                  <img id="barba-m-select-10" src="img/desktop/avatars/Mujer-Boca-10.png" class="avatar-barba-img m hidden">
+                  <img id="avatar-barba-m-change-right" src="img/desktop/right-arrow.png" class="avatar-change">
+                  <img id="avatar-barba-m-change-left" src="img/desktop/left-arrow.png" class="avatar-change avatar-change-left">
+                </div>
+                <div id="avatar-hombre-eye-select" class="crear-box relative">
+                  <img id="ojo-h-select-1" src="img/desktop/avatars/Hombre-Ojos-1.png" class="avatar-ojo-img h active">
+                  <img id="ojo-h-select-2" src="img/desktop/avatars/Hombre-Ojos-2.png" class="avatar-ojo-img h hidden">
+                  <img id="ojo-h-select-3" src="img/desktop/avatars/Hombre-Ojos-3.png" class="avatar-ojo-img h hidden">
+                  <img id="ojo-h-select-4" src="img/desktop/avatars/Hombre-Ojos-4.png" class="avatar-ojo-img h hidden">
+                  <img id="ojo-h-select-5" src="img/desktop/avatars/Hombre-Ojos-5.png" class="avatar-ojo-img h hidden">
+                  <img id="ojo-h-select-6" src="img/desktop/avatars/Hombre-Ojos-6.png" class="avatar-ojo-img h hidden">
+                  <img id="ojo-h-select-7" src="img/desktop/avatars/Hombre-Ojos-7.png" class="avatar-ojo-img h hidden">
+                  <img id="ojo-h-select-8" src="img/desktop/avatars/Hombre-Ojos-8.png" class="avatar-ojo-img h hidden">
+                  <img id="ojo-h-select-9" src="img/desktop/avatars/Hombre-Ojos-9.png" class="avatar-ojo-img h hidden">
+                  <img id="ojo-h-select-10" src="img/desktop/avatars/Hombre-Ojos-10.png" class="avatar-ojo-img h hidden">
+                  <img id="ojo-h-select-11" src="img/desktop/avatars/Hombre-Ojos-11.png" class="avatar-ojo-img h hidden">
+                  <img id="ojo-h-select-12" src="img/desktop/avatars/Hombre-Ojos-12.png" class="avatar-ojo-img h hidden">
+                  <img id="ojo-h-select-13" src="img/desktop/avatars/Hombre-Ojos-13.png" class="avatar-ojo-img h hidden">
+                  <img id="avatar-ojo-h-change-right" src="img/desktop/right-arrow.png" class="avatar-change">
+                  <img id="avatar-ojo-h-change-left" src="img/desktop/left-arrow.png" class="avatar-change avatar-change-left">
+                </div>
+                <div id="avatar-mujer-eye-select" class="crear-box relative hidden">
+                  <img id="ojo-m-select-1" src="img/desktop/avatars/Mujer-Ojos-1.png" class="avatar-ojo-img m active">
+                  <img id="ojo-m-select-2" src="img/desktop/avatars/Mujer-Ojos-2.png" class="avatar-ojo-img m hidden">
+                  <img id="ojo-m-select-3" src="img/desktop/avatars/Mujer-Ojos-3.png" class="avatar-ojo-img m hidden">
+                  <img id="ojo-m-select-4" src="img/desktop/avatars/Mujer-Ojos-4.png" class="avatar-ojo-img m hidden">
+                  <img id="ojo-m-select-5" src="img/desktop/avatars/Mujer-Ojos-5.png" class="avatar-ojo-img m hidden">
+                  <img id="ojo-m-select-6" src="img/desktop/avatars/Mujer-Ojos-6.png" class="avatar-ojo-img m hidden">
+                  <img id="ojo-m-select-7" src="img/desktop/avatars/Mujer-Ojos-7.png" class="avatar-ojo-img m hidden">
+                  <img id="ojo-m-select-8" src="img/desktop/avatars/Mujer-Ojos-8.png" class="avatar-ojo-img m hidden">
+                  <img id="ojo-m-select-9" src="img/desktop/avatars/Mujer-Ojos-9.png" class="avatar-ojo-img m hidden">
+                  <img id="ojo-m-select-10" src="img/desktop/avatars/Mujer-Ojos-10.png" class="avatar-ojo-img m hidden">
+                  <img id="ojo-m-select-11" src="img/desktop/avatars/Mujer-Ojos-11.png" class="avatar-ojo-img m hidden">
+                  <img id="ojo-m-select-12" src="img/desktop/avatars/Mujer-Ojos-12.png" class="avatar-ojo-img m hidden">
+                  <img id="ojo-m-select-13" src="img/desktop/avatars/Mujer-Ojos-13.png" class="avatar-ojo-img m hidden">
+                  <img id="avatar-ojo-m-change-right" src="img/desktop/right-arrow.png" class="avatar-change">
+                  <img id="avatar-ojo-m-change-left" src="img/desktop/left-arrow.png" class="avatar-change avatar-change-left">
+                </div>
+            </div>
+              <div class="crear-avatar-container-right">
+                <div class="rotate-text crear-sub-text light">Ya esta listo</div>
+                <img src="img/desktop/fb.png" class="fb-img pointer">
+              </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- BEGIN FOOTER SECTION -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div>Bases Legales</div>
+          <div> | </div>
+          <div>Política de Cookies</div>
+          <div> | </div>
+          <div>Política de Privacidad</div>
+          <div> | </div>
+          <div>Términos y Condiciones</div>
+          <div> | </div>
+          <div>Contacto</div>
+          <div> | </div>
+          <div class="text-white">Copyright 2016</div>
+        </div>
+      </div>
+    </footer>
+    <!-- END FOOTER SECTION -->
+</body>
+</html>

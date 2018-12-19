@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Axion</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    
+    <!-- Important Owl stylesheet -->
+    <link rel="stylesheet" href="css/owl.carousel.css">
+     
+    <!-- Default Theme -->
+    <link rel="stylesheet" href="css/owl.theme.css">
+
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style-D1.css" rel="stylesheet" id="sheet-d1">
+      
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Include js plugin -->
+    <script src="js/owl.carousel.js"></script> 
+</head>
+
+<body id="home">
+  <script type="text/javascript">
+      $(document).ready(function() {
+
+        $("#home-slider").owlCarousel({
+
+            autoPlay: false,
+            navigation : true, // Show next and prev buttons
+            slideSpeed : 300,
+            paginationSpeed : 400,
+            singleItem:true,
+            pagination:false
+
+        });
+
+        $("#left-slider-desktop").owlCarousel({
+
+            autoPlay: true,
+            navigation : true, // Show next and prev buttons
+            slideSpeed : 300,
+            paginationSpeed : 400,
+            singleItem:true,
+            pagination:false
+
+        });
+
+        $("#left-slider-mobile").owlCarousel({
+
+            autoPlay: true,
+            navigation : true, // Show next and prev buttons
+            slideSpeed : 300,
+            paginationSpeed : 400,
+            singleItem:true,
+            pagination:false
+
+        });
+
+        $("#right-slider-desktop").owlCarousel({
+
+            autoPlay: true,
+            navigation : true, // Show next and prev buttons
+            slideSpeed : 300,
+            paginationSpeed : 400,
+            singleItem:true,
+            pagination:false
+
+        });
+
+        $("#right-slider-mobile").owlCarousel({
+
+            autoPlay: true,
+            navigation : true, // Show next and prev buttons
+            slideSpeed : 300,
+            paginationSpeed : 400,
+            singleItem:true,
+            pagination:false
+
+        });
+
+        $("#home-slider .owl-prev").html("<img class='hidden-mobile' src='img/arrow-left.png'><img class='hidden-desktop' src='img/arrow-left-small.png'>");
+
+        $("#home-slider .owl-next").html("<img class='hidden-mobile' src='img/arrow-right.png'><img class='hidden-desktop' src='img/arrow-right-small.png'>");
+        
+        $("#left-slider-desktop .owl-prev").html("<img class='hidden-mobile' src='img/arrow-left-small.png'>");
+        $("#left-slider-desktop .owl-next").html("<img class='hidden-mobile' src='img/arrow-right-small.png'>");
+
+        $("#left-slider-mobile .owl-prev").html("<img class='hidden-desktop' src='img/arrow-left-tiny.png'>");
+        $("#left-slider-mobile .owl-next").html("<img class='hidden-desktop' src='img/arrow-right-tiny.png'>");
+        
+        $("#right-slider-desktop .owl-prev").html("<img class='hidden-mobile' src='img/arrow-left-small.png'>");
+        $("#right-slider-desktop .owl-next").html("<img class='hidden-mobile' src='img/arrow-right-small.png'>");
+
+        $("#right-slider-mobile .owl-prev").html("<img class='hidden-desktop' src='img/arrow-left-tiny.png'>");
+        $("#right-slider-mobile .owl-next").html("<img class='hidden-desktop' src='img/arrow-right-tiny.png'>");
+      });        
+    </script>
+  
+  <header>
+    <div class="container relative full-width-mobile">
+      <div class="header-logo inline hidden-mobile">
+        <img src="./img/header.png">
+      </div><div class="header-search inline hidden-mobile">
+        <form class="navbar-form navbar-left" role="search">
+          <div class="form-group relative">
+            <span class="glyphicon glyphicon-search pointer" aria-hidden="true"></span>
+            <input type="text" class="form-control" placeholder="Buscar...">
+          </div>
+        </form>
+      </div><div class="dropdown header-menu inline pointer">
+        <button class="btn btn-default btn-menu dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+          <span class="glyphicon glyphicon-menu-hamburger inline hidden-desktop" aria-hidden="true"></span>
+          <div class="inline left-mobile">
+            <span class="header-menu-user inline">Bienvenido,</span>
+            <span class="header-menu-user inline bold">Usuario 1</span>
+          </div>
+          <span class="glyphicon glyphicon-menu-hamburger inline hidden-mobile" aria-hidden="true"></span>
+        </button>
+        <div class="triangle-up"></div>
+        <ul class="dropdown-menu center-mobile" aria-labelledby="dropdownMenu1">
+          <li class="hidden-desktop">
+            <form class="navbar-form navbar-left" role="search">
+              <div class="form-group relative">
+                <span class="glyphicon glyphicon-search pointer" aria-hidden="true"></span>
+                <input type="text" class="form-control" placeholder="Buscar...">
+              </div>
+            </form>
+          </li>
+          <li><a href="#" class="bold hidden-mobile">Mi cuenta</a></li>
+          <li role="separator" class="divider hidden-mobile"></li>
+          <li><a href="#" class="bold hidden-mobile">Inversiones</a></li>
+          <li role="separator" class="divider hidden-mobile"></li>
+          <li><a href="#" class="bold">Reglamento y formulario</a></li>
+          <li role="separator" class="divider"></li>
+          <li><a href="#" class="bold">Que es un plan de pension</a></li>
+          <li role="separator" class="divider"></li>
+          <li><a href="#" class="bold hidden-mobile">Libreria de Recursos</a></li>
+          <li role="separator" class="divider hidden-mobile"></li>
+          <li><a href="#" class="bold">Preguntas Frecuentes</a></li>
+          <li role="separator" class="divider"></li>
+          <li><a href="#" class="bold">Cambiar clave</a></li>
+          <li role="separator" class="divider"></li>
+          <li><a href="#" class="bold">Contacto</a></li>
+          <li role="separator" class="divider"></li>
+          <li><a href="#" class="bold">Cerrar Sesion</a></li>
+        </ul>
+      </div>
+      <div class="header-logo inline hidden-desktop">
+        <img src="./img/header.png">
+      </div>
+    </div>
+  </header>
+
+
+  <section id="slider">
+    <div id="home-slider" class="owl-carousel owl-theme">
+      <div class="item"><img  src="img/slider-1.jpg">
+        <div class="slider-text">
+          <div class="t1">Lorem Ipsum</div>
+          <div class="t2">CONSECTETUR ADIPISCING</div>
+        </div>
+      </div>
+      <div class="item"><img  src="img/slider-2.jpg">
+        <div class="slider-text">
+          <div class="t1">Lorem Ipsum</div>
+          <div class="t2">CONSECTETUR ADIPISCING</div>
+        </div>
+      </div>
+      <div class="item"><img  src="img/slider-1.jpg">
+        <div class="slider-text">
+          <div class="t1">Lorem Ipsum</div>
+          <div class="t2">CONSECTETUR ADIPISCING</div>
+        </div>
+      </div>
+      <div class="item"><img  src="img/slider-2.jpg">
+        <div class="slider-text">
+          <div class="t1">Lorem Ipsum</div>
+          <div class="t2">CONSECTETUR ADIPISCING</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="items" class="container">
+    <div class="boxes-container home">
+      <div class="row box-row">
+        <div class="col-md-4 col-sm-4">
+          <div class="box relative light-blue">
+            <img class="box-img icon-big" src="./img/icons/home/mi-cuenta.png">
+            <img class="box-img icon-small" src="./img/mobile/icons/mi-cuenta.png">
+            <div class="box-text-container">
+              <div class="box-text black">Mi Cuenta</div>
+              <div class="box-subtext">Saldo y movimientos personales de su cuenta.</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-4 separation-mobile-15">
+          <div class="box relative red">
+            <img class="box-img icon-big" src="./img/icons/home/inversiones.png">
+            <img class="box-img icon-small" src="./img/mobile/icons/inversiones.png">
+            <div class="box-text-container">
+              <div class="box-text black">Inversiones</div>
+              <div class="box-subtext">Su cartera de inversión y otras opciones disponibles.</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-4 hidden-mobile">
+          <div class="box relative blue">
+            <img class="box-img" src="./img/icons/home/reglamento-formularios.png">
+            <div class="box-text black">Regamento y Formularios</div>
+            <div class="box-subtext s3">Descarguen el reglamento y los formularios.</div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-4 hidden-desktop separation-mobile-15">
+          <div class="box relative blue">
+            <img class="box-img icon-big" src="./img/icons/home/libreria-recursos.png">
+            <img class="box-img icon-small" src="./img/mobile/icons/libreria-recursos.png">
+            <div class="box-text-container">
+              <div class="box-text black">Librería de Recursos</div>
+              <div class="box-subtext">Material de interés para una mejor educación financiera.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row box-row hidden-mobile last">
+        <div class="col-md-4 col-sm-4">
+          <div class="box relative red">
+            <div class="box-text no-img">Encuesta</div>
+            <div class="box-subtext no-img">¿Sobre que temática les gustaría recibir más información?</div>
+            <div class="options-container">
+              <div class="radio">
+                <label><input class="inline" type="radio" name="optradio">Seguridad Social</label>
+              </div>
+              <div class="radio">
+                <label><input type="radio" name="optradio">Características del Plan de Pensión</label>
+              </div>
+              <div class="radio last">
+                <label><input type="radio" name="optradio">Características de los Fondos de Inversión</label>
+              </div>
+            </div>
+            <button type="button" class="btn btn-white bold">Enviar</button>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-4" style="display:none">
+          <div class="box relative red">
+            <img class="box-img icon-big" src="./img/icons/home/plan-pension.png">
+            <img class="box-img icon-small" src="./img/mobile/icons/mi-cuenta.png">
+            <div class="box-text-container">
+              <div class="box-text black widther">Qué es un plan de pensión</div>
+              <div class="box-subtext">Texto simulado<br>Texto simulado<br>Texto simulado</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-4">
+          <div class="box relative blue">
+            <img class="box-img" src="./img/icons/home/libreria-recursos.png">
+            <div class="box-text black">Librería de Recursos</div>
+            <div class="box-subtext">Material de interés para una mejor educación financiera.</div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-4" style="display:none">
+          <div class="box relative light-blue">
+            <img class="box-img" src="./img/icons/home/proyector-beneficios.png">
+            <div class="box-text black">Proyector de Beneficios</div>
+            <div class="box-subtext">Simulen los beneficios que podrían obtener al retiro ante distintos escenarios.</div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-4">
+          <div class="box relative light-blue">
+            <img class="box-img" src="./img/icons/home/preguntas-frecuentes.png">
+            <div class="box-text black">Preguntas Frecuentes</div>
+            <div class="box-subtext">Texto simulado<br>Texto simulado<br>Texto simulado</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="small-sliders" class="container">
+    <div class="col-md-6 col-sm-6 hidden-mobile">
+      <div id="left-slider-desktop" class="owl-carousel owl-theme">
+        <div class="item">
+          <img src="img/slider-left.png">
+          <div class="slider-left-content">
+            <div>Los fondos buitres no podrán embargar activos del Banco Central</div>
+            <div><a class="twitter-link">http://clar.in/1JGY8zv</a></div>
+            <hr>
+            <div><span class="twitter-link bold">@iecoclarin</span><span> - 26 marzo</span></div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="img/slider-left.png">
+          <div class="slider-left-content">
+            <div>Los fondos buitres no podrán embargar activos del Banco Central</div>
+            <div><a class="twitter-link">http://clar.in/1JGY8zv</a></div>
+            <hr>
+            <div><span class="twitter-link bold">@iecoclarin</span><span> - 26 marzo</span></div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="img/slider-left.png">
+          <div class="slider-left-content">
+            <div>Los fondos buitres no podrán embargar activos del Banco Central</div>
+            <div><a class="twitter-link">http://clar.in/1JGY8zv</a></div>
+            <hr>
+            <div><span class="twitter-link bold">@iecoclarin</span><span> - 26 marzo</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 separation-mobile-15 hidden-desktop">
+      <div id="left-slider-mobile" class="owl-carousel owl-theme">
+        <div class="item">
+          <img src="img/mobile/twitter.jpg">
+          <div class="horizontal-slider">
+            <div>Los fondos buitres no podrán embargar activos del Banco Central</div>
+            <div><a class="twitter-link">http://clar.in/1JGY8zv</a></div>
+            <hr>
+            <div><span class="twitter-link bold">@iecoclarin</span><span> - 26 marzo</span></div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="img/mobile/twitter.jpg">
+          <div class="horizontal-slider">
+            <div>Los fondos buitres no podrán embargar activos del Banco Central</div>
+            <div><a class="twitter-link">http://clar.in/1JGY8zv</a></div>
+            <hr>
+            <div><span class="twitter-link bold">@iecoclarin</span><span> - 26 marzo</span></div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="img/mobile/twitter.jpg">
+          <div class="horizontal-slider">
+            <div>Los fondos buitres no podrán embargar activos del Banco Central</div>
+            <div><a class="twitter-link">http://clar.in/1JGY8zv</a></div>
+            <hr>
+            <div><span class="twitter-link bold">@iecoclarin</span><span> - 26 marzo</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 col-sm-6 hidden-mobile">
+      <div id="right-slider-desktop" class="owl-carousel owl-theme">
+        <div class="item">
+          <img src="img/slider-right.png">
+          <div class="slider-right-content">
+            <div class="slider-right-title light">Crisis económica</div>
+            <hr class="first">
+            <div>"El credito se recupera y crece hasta un 30 por ciento a nivel interanual."</div>
+            <hr class="second">
+            <div class="slider-right-link-container"><a class="slider-right-link bold pointer">leer más +</a></div>
+          </div>
+        </div>
+        <div class="item hidden-mobile"><img src="img/slider-right.png"></div>
+        <div class="item hidden-mobile"><img src="img/slider-right.png"></div>
+        <div class="item hidden-mobile"><img src="img/slider-right.png"></div>
+      </div>
+    </div>
+    <div class="col-md-6 separation-mobile-15 hidden-desktop">
+      <div id="right-slider-mobile" class="owl-carousel owl-theme">
+        <div class="item">
+          <div class="horizontal-slider">
+            <div class="slider-right-title light">Crisis económica</div>
+            <div>"El credito se recupera y crece hasta un 30 por ciento a nivel interanual."</div>
+            <hr class="second">
+            <div class="slider-right-link-container left-mobile"><a class="slider-right-link bold pointer">leer más +</a></div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="horizontal-slider">
+            <div class="slider-right-title light">Crisis económica</div>
+            <div>"El credito se recupera y crece hasta un 30 por ciento a nivel interanual."</div>
+            <hr class="second">
+            <div class="slider-right-link-container left-mobile"><a class="slider-right-link bold pointer">leer más +</a></div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="horizontal-slider">
+            <div class="slider-right-title light">Crisis económica</div>
+            <div>"El credito se recupera y crece hasta un 30 por ciento a nivel interanual."</div>
+            <hr class="second">
+            <div class="slider-right-link-container left-mobile"><a class="slider-right-link bold pointer">leer más +</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container full-width-mobile">
+      <div class="footer-container">
+        <div class="footer-left">
+          <div class="hidden-mobile bold">Copyright ©2016 Towers Watson. All Rights Reserved.</div>
+          <div class="center-mobile">
+            <span class="footer-item"><a href="">Mapa del Sitio</a></span>
+            <span class="hidden-mobile"> | </span>
+            <hr class="hidden-desktop">
+            <span class="footer-item"><a href="">Terminos de Uso</a></span>
+            <span class="hidden-mobile"> | </span>
+            <hr class="hidden-desktop">
+            <span class="footer-item"><a href="">Políticas de Privacidad & Cookies</a></span>
+            <hr class="hidden-desktop">
+          </div>
+          <div class="hidden-desktop center-mobile bold">Copyright ©2016 Towers Watson.<br>All Rights Reserved.</div>
+        </div>
+        <div class="footer-right center-mobile">
+          <img src="./img/footer-logo.png">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

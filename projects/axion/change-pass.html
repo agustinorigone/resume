@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Axion</title>
+
+  <!-- Bootstrap Core CSS -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+  
+  <!-- Important Owl stylesheet -->
+  <link rel="stylesheet" href="css/owl.carousel.css">
+   
+  <!-- Default Theme -->
+  <link rel="stylesheet" href="css/owl.theme.css">
+
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style-D1.css" rel="stylesheet" id="sheet-d1">
+    
+  <!-- jQuery -->
+  <script src="js/jquery.js"></script>
+
+  <!-- Bootstrap Core JavaScript -->
+  <script src="js/bootstrap.min.js"></script>
+
+  <!-- Include js plugin -->
+  <script src="js/owl.carousel.js"></script> 
+</head>
+
+<body>
+  <script type="text/javascript">
+    $( document ).ready(function() {
+      $(".change-style").click(function(){
+        $('#sheet-d1').remove();
+        $('#sheet-d2').remove();
+        $('#sheet-d3').remove();
+        
+        if($(this).attr("id") == "d1"){
+          $("head").append("<link href='css/style-D1.css' rel='stylesheet' id='sheet-d1'>");  
+        }
+
+        if($(this).attr("id") == "d2"){
+          $("head").append("<link href='css/style-D2.css' rel='stylesheet' id='sheet-d2'>");  
+        }
+
+        if($(this).attr("id") == "d3"){
+          $("head").append("<link href='css/style-D3.css' rel='stylesheet' id='sheet-d3'>");  
+        }
+      });
+
+      $("#login-slider").owlCarousel({
+
+          autoPlay: true,
+          navigation : true, // Show next and prev buttons
+          slideSpeed : 300,
+          paginationSpeed : 400,
+          singleItem:true,
+          pagination:false
+
+      });
+
+      $("#login-slider .owl-prev").html("<img src='img/arrow-left.png'>");
+      $("#login-slider .owl-next").html("<img src='img/arrow-right.png'>");
+
+    });
+  </script>
+
+  <div style="position: absolute; top: 0; right: 0; z-index:1;">
+    <span id="d1" class="change-style pointer" style="background-color: red">D1</span>
+    <span id="d2" class="change-style pointer" style="background-color: blue">D2</span>
+    <span id="d3" class="change-style pointer" style="background-color: green">D3</span>
+  </div>
+
+  <section class="login-background hidden-d3 relative">
+    <div class="container">
+      <div class="login-header">
+        <img src="./img/header.png">
+      </div>
+      <div class="login-form-container">
+        <div class="login-title bold">Cambio de Contraseña</div>
+        <div class="login-subtitle bold hidden-mobile">Ingresa a continuación tu nueva contraseña.</div>
+        <div class="login-desc hidden-mobile">Para mayor seguridad, te sugerimos combinar 8 caracteres como mínimo, entre letras, números y caracteres especiales.</div>
+        <div class="login-subtitle hidden-desktop">Ingresa a continuación tu nueva contraseña. Para mayor seguridad, te sugerimos combinar 8 caracteres como mínimo, entre letras, números y caracteres especiales.</div>
+        <form class="change-pass-form">
+          <fieldset class="form-group">
+            <label for="formGroupExampleInput inline">Nueva Contraseña:</label>
+            <input type="password" class="form-control inline-input" placeholder="">
+            <span style="display: none"class="login-error">Escribí tu contraseña individual.</span>
+            <span class="login-error">
+              <span class="glyphicon glyphicon-remove inline glyphicon-pass" aria-hidden="true"></span>
+              <span class="inline"> Nivel de seguridad: BAJA</span>
+            </span>
+
+          </fieldset>
+          <fieldset class="form-group">
+            <label for="formGroupExampleInput2 inline">Repetir Contrseña:</label>
+            <input type="password" class="form-control inline-input" placeholder="">
+            <span class="login-error">Ingresa otra vez tu nueva contraseña.</span>
+          </fieldset>
+        </form>
+        <div class="separation-40 btn-change-pass-container center-mobile">
+          <button type="button" class="btn btn-login btn-change-pass bold">Enviar</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="slider" class="hidden-d1 hidden-d2">
+    <div id="login-slider" class="owl-carousel owl-theme">
+      <div class="item"><img src="img/d3/login-background.jpg"></div>
+      <div class="item"><img src="img/d3/login-background.jpg"></div>
+      <div class="item"><img src="img/d3/login-background.jpg"></div>
+      <div class="item"><img src="img/d3/login-background.jpg"></div>
+    </div>
+    <div class="container login-d3-container">
+      <div class="login-header">
+        <img src="./img/header.png">
+      </div>
+      <div class="login-form-container">
+        <div class="login-title bold">Cambio de Contraseña</div>
+        <div class="login-subtitle bold">Ingresa a continuación tu nueva contraseña.</div>
+        <div class="login-desc">Para mayor seguridad, te sugerimos combinar 8 caracteres como mínimo, entre letras, números y caracteres especiales.</div>
+        <form class="change-pass-form">
+          <fieldset class="form-group">
+            <label for="formGroupExampleInput" class="inline">Nueva Contraseña:</label>
+            <input type="password" class="form-control inline-input" placeholder="">
+            <span style="display: none"class="login-error">Escribí tu contraseña individual.</span>
+            <span class="login-error">
+              <span class="glyphicon glyphicon-remove inline glyphicon-pass" aria-hidden="true"></span>
+              <span class="inline"> Nivel de seguridad: BAJA</span>
+            </span>
+
+          </fieldset>
+          <fieldset class="form-group">
+            <label for="formGroupExampleInput2 inline">Repetir Contrseña:</label>
+            <input type="password" class="form-control inline-input" placeholder="">
+            <span class="login-error">Ingresa otra vez tu nueva contraseña.</span>
+          </fieldset>
+        </form>
+        <div class="separation-40 btn-change-pass-container center-mobile">
+          <button type="button" class="btn btn-login btn-change-pass bold">Enviar</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container full-width-mobile">
+      <div class="footer-container login">
+        <div class="footer-left">
+          <div class="center-mobile">Copyright ©2016 Towers Watson.<br>All Rights Reserved.</div>
+          <hr class="hidden-desktop">
+        </div>
+        <div class="footer-right center-mobile">
+          <img src="./img/footer-logo.png">
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+</body>
+
+</html>
